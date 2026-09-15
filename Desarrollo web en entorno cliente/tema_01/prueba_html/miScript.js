@@ -1,3 +1,2 @@
-alert("Hola mundo");
-
-console.log("Ya he mostrado el alert");
+const continuar = confirm("Quieres continuar?")
+alert(continuar)
