@@ -43,7 +43,6 @@ function Ej5() {
   let millas = parseInt(prompt("Introduce el primer número: "));
 
   let metros = millas * 1609.34;
-
 }
 
 
