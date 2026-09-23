@@ -18,16 +18,17 @@
             echo "<br/> " . $name[$elegido2];
 
             echo "<br />";
+            echo "<br />";
 
             $dado1 = rand (1, 6);
             $dado2 = rand (1, 6);
-            $result = $dado1 + $dado2
+            $result = $dado1 + $dado2;
 
-            $mensaje = ($result == 7 or $dado1 == $dado2) ? "Has ganado" : "Has perdido";
+            $mensaje = ($result == 7 || $dado1 == $dado2) ? "Has ganado" : "Has perdido";
 
             echo "Dado1: " . $dado1;
             echo "<br />Dado2: " . $dado2;
-            //echo "<br />" . $mensaje;
+            echo "<br />" . $mensaje;
         ?>
     </body>
 </html>
