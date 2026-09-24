@@ -40,7 +40,7 @@ function Ej4() {
 
 
 function Ej5() {
-  let millas = parseInt(prompt("Introduce el primer número: "));
+  let millas = parseFloat(prompt("Introduce el primer número: "));
 
   let metros = millas * 1609.34;
 }
@@ -64,4 +64,10 @@ function Ej7() {
 function Ej8() {
   alert(`Esto es un texto con "comillas dobles" y 'comillas simples',
     y además, formado por varias líneas.`);
+}
+
+
+function Ej9() {
+  let ran = Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000;
+  alert(`Desc - ${ran}`);
 }
