@@ -47,5 +47,21 @@ function Ej5() {
 
 
 function Ej6() {
+  let a = 5;
+  let b = ++a;
 
+  a = 5;
+  b = a++;
+}
+
+
+function Ej7() {
+  let foo = "hola";
+  console.log(parseInt(foo));
+}
+
+
+function Ej8() {
+  alert(`Esto es un texto con "comillas dobles" y 'comillas simples',
+    y además, formado por varias líneas.`);
 }
