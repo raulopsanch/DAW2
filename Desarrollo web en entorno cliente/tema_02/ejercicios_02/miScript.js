@@ -71,3 +71,10 @@ function Ej9() {
   let ran = Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000;
   alert(`Desc - ${ran}`);
 }
+
+
+function Ej10() {
+  let num = parseInt(prompt("Introduce un número: "));
+
+  alert(`${num} es ${num % 2 == 0 ? 'par' : 'impar'}`);
+}
