@@ -7,6 +7,8 @@
     </head>
     <body>
         <?php
+            echo "<p>Este es el footer</p>";
+            echo "<img src= './imagenes/the_witcher.png' witch= 100 height= 100/>";
             echo "<p>Gracias por venir</p>";
         ?>
     </body>
