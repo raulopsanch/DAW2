@@ -101,9 +101,49 @@ function Ej10() {
 function Ej11() {
   let mensaje = "";
   
-  for (let i = 15; i > 5; i--) {
+  for (let i = 15; i >= 5; i--) {
     mensaje += i + " ";
   }
 
   alert(mensaje);
+}
+
+
+function Ej12() {
+  let alto = parseInt(prompt("Introduce el alto: "));
+  let ancho = parseInt(prompt("Introduce el ancho: "));
+  let resultado = "";
+  for (let i = 0; i < alto; i++) {
+    for (let j = 0; j < ancho; j++) {
+      resultado += "*";
+    }
+    resultado += "\n";
+  }
+  alert(resultado);
+}
+
+
+function Ej13() {
+  let alto = parseInt(prompt("Introduce el alto: "));
+  let ancho = parseInt(prompt("Introduce el ancho: "));
+  let resultado = "";
+
+  for (let i = 0; i < alto; i++) {
+    for (let j = 0; j < ancho; j++) {
+      if (i === j) {
+        resultado += "0";
+      } else {
+        resultado += "*";  
+      }
+    }
+    resultado += "\n";
+  }
+  alert(resultado);
+}
+
+
+function Ej14() {
+  let intentos = 1;
+
+  
 }
