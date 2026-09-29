@@ -9,7 +9,7 @@
         <?php
             include "menu.php";
 
-            echo "<h1 style= 'background-color: red;'>Página principal de Raúl</h1>";
+            echo "<h1 style= 'background-color: red; display: inline-block'>Página principal de Raúl</h1>";
 
             include "footer.php";
         ?>

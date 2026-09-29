@@ -83,16 +83,67 @@ function Ej9() {
 }
 
 function Ej10() {
-  let i = 0;
-  let n = 0;
+  let i = 1;
+  let pares = 0;
   let mensaje = "";
 
-  while (i) {
-    if (n % 2 == 0) {
+  while (pares < 8) {
+    if (i % 2 == 0) {
       mensaje += i + ", ";
+      pares++;
     }
-    n++;
     i++;
   }
   alert(mensaje);
+}
+
+
+function Ej11() {
+  let mensaje = "";
+  
+  for (let i = 15; i >= 5; i--) {
+    mensaje += i + " ";
+  }
+
+  alert(mensaje);
+}
+
+
+function Ej12() {
+  let alto = parseInt(prompt("Introduce el alto: "));
+  let ancho = parseInt(prompt("Introduce el ancho: "));
+  let resultado = "";
+  for (let i = 0; i < alto; i++) {
+    for (let j = 0; j < ancho; j++) {
+      resultado += "*";
+    }
+    resultado += "\n";
+  }
+  alert(resultado);
+}
+
+
+function Ej13() {
+  let alto = parseInt(prompt("Introduce el alto: "));
+  let ancho = parseInt(prompt("Introduce el ancho: "));
+  let resultado = "";
+
+  for (let i = 0; i < alto; i++) {
+    for (let j = 0; j < ancho; j++) {
+      if (i === j) {
+        resultado += "0";
+      } else {
+        resultado += "*";  
+      }
+    }
+    resultado += "\n";
+  }
+  alert(resultado);
+}
+
+
+function Ej14() {
+  let intentos = 1;
+
+  
 }
