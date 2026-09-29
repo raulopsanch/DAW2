@@ -83,16 +83,27 @@ function Ej9() {
 }
 
 function Ej10() {
-  let i = 0;
-  let n = 0;
+  let i = 1;
+  let pares = 0;
   let mensaje = "";
 
-  while (i) {
-    if (n % 2 == 0) {
+  while (pares < 8) {
+    if (i % 2 == 0) {
       mensaje += i + ", ";
+      pares++;
     }
-    n++;
     i++;
   }
+  alert(mensaje);
+}
+
+
+function Ej11() {
+  let mensaje = "";
+  
+  for (let i = 15; i > 5; i--) {
+    mensaje += i + " ";
+  }
+
   alert(mensaje);
 }
