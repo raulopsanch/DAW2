@@ -16,7 +16,10 @@ function Ej3() {
   let num2 = parseInt(prompt("Introduce el segundo número: "));
 
   alert(
-    `${num1} ${num1 % num2 == 0 ? " es múltipo" : " no es múltiplo "} de ${num2}`);
+    `${num1} ${
+      num1 % num2 == 0 ? " es múltipo" : " no es múltiplo "
+    } de ${num2}`
+  );
 }
 
 function Ej4() {
@@ -97,17 +100,15 @@ function Ej10() {
   alert(mensaje);
 }
 
-
 function Ej11() {
   let mensaje = "";
-  
+
   for (let i = 15; i >= 5; i--) {
     mensaje += i + " ";
   }
 
   alert(mensaje);
 }
-
 
 function Ej12() {
   let alto = parseInt(prompt("Introduce el alto: "));
@@ -122,7 +123,6 @@ function Ej12() {
   alert(resultado);
 }
 
-
 function Ej13() {
   let alto = parseInt(prompt("Introduce el alto: "));
   let ancho = parseInt(prompt("Introduce el ancho: "));
@@ -133,14 +133,13 @@ function Ej13() {
       if (i === j) {
         resultado += "0";
       } else {
-        resultado += "*";  
+        resultado += "*";
       }
     }
     resultado += "\n";
   }
   alert(resultado);
 }
-
 
 function Ej14() {
   let intentos = 0;
@@ -162,7 +161,6 @@ function Ej14() {
   }
 }
 
-
 function Ej15() {
   let numero;
 
@@ -172,7 +170,7 @@ function Ej15() {
       let cuadrado = numero * numero;
       alert(`El cuadrado de ${numero} es ${cuadrado}`);
     } else {
-          alert("Saliendo del programa");
+      alert("Saliendo del programa");
     }
   } while (numero != 0);
 }
