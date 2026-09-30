@@ -143,7 +143,49 @@ function Ej13() {
 
 
 function Ej14() {
-  let intentos = 1;
+  let intentos = 0;
+  let usuario = "";
+  let contraseña = "";
 
-  
+  while (usuario != "alibaba" || contraseña != "sesamo") {
+    usuario = prompt("Introduce el usuario: ");
+    contraseña = prompt("Introduce la contraseña: ");
+    intentos++;
+
+    if (usuario == "alibaba" && contraseña == "sesamo") {
+      alert("¡Acceso concedido!");
+    }
+
+    if (intentos == 3) {
+      alert("Usuario o contrasña incorrectos");
+    }
+  }
+}
+
+
+function Ej15() {
+  let numero;
+
+  do {
+    numero = parseInt(prompt("Introduce un número: "));
+    if (numero != 0) {
+      let cuadrado = numero * numero;
+      alert(`El cuadrado de ${numero} es ${cuadrado}`);
+    } else {
+          alert("Saliendo del programa");
+    }
+  } while (numero != 0);
+}
+
+function Ej17() {
+  let contador = 1;
+
+  while (true) {
+    alert("Hola");
+    contador++;
+
+    if (contador > 10) {
+      break;
+    }
+  }
 }
