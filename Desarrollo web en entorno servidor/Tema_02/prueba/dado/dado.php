@@ -7,14 +7,16 @@
     </head>
     <body>
         <?php
-            $dado1 = 1;
+            $dado1 = rand(1, 6);
             $dado2 = rand (1, 6);
             $result = $dado1 + $dado2;
             $mensaje = ($result == 7 || $dado1 == $dado2) ? "Has ganado" : "Has perdido";
 
-            $imagenes = ["dado_1.jpg", "dado_2.jpg", "dado_3.jpg", "dado_4.jpg", "dado_5.jpg", "dado_6.jpg"];
+            $caras1 = ["dado_1.jpg", "dado_2.jpg", "dado_3.jpg", "dado_4.jpg", "dado_5.jpg", "dado_6.jpg"];
 
-            echo "<img src = " . $imagenes[dado_1];
+            $caras2 = ["dado_1.jpg", "dado_2.jpg", "dado_3.jpg", "dado_4.jpg", "dado_5.jpg", "dado_6.jpg"];
+
+            echo "<img src = " . $caras1[dado_1];
             
             echo "<br />Dado2: " . $dado2;
             echo "<br />" . $mensaje;
