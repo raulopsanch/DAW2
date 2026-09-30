@@ -153,10 +153,12 @@ function Ej14() {
 
     if (usuario == "alibaba" && contraseña == "sesamo") {
       alert("¡Acceso concedido!");
+      break;
     }
 
     if (intentos < 3) {
       alert("Usuario o contrasña incorrectos");
+      break;
     }
   }
 }
