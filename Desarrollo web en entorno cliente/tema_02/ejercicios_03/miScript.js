@@ -155,7 +155,7 @@ function Ej14() {
       alert("¡Acceso concedido!");
     }
 
-    if (intentos == 3) {
+    if (intentos < 3) {
       alert("Usuario o contrasña incorrectos");
     }
   }
