@@ -10,7 +10,7 @@
 		Este es el curso de php de 2026
 	</p>
         <?php
-		echo "Hola mundo"
-	?>
+		    echo "Hola mundo"
+	    ?>
     </body>
 </html>
