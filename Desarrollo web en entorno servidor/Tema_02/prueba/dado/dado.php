@@ -12,7 +12,7 @@
 
     echo "<br>";
 
-    $mensaje1 = ($n1 == $n2)
+    /* $mensaje1 = ($n1 == $n2)
         ? "Pareja"
         : "No son pareja, vuelve a intentarlo";
     echo $mensaje1;
@@ -20,7 +20,15 @@
     $mensaje2 = ($n1 + $n2 == 7)
         ? "Enhorabuena, la suma de los números es 7"
         : "Has fallado, la suma de los números no es 7";
-    echo $mensaje2;
+    echo $mensaje2; */
+
+    if ($n1 == $n2) {
+        echo "Enhorabuena, has conseguido pareja";
+    } elseif ($n1 + $n2 == 7) {
+        echo "Enhorabuena, los dados suman 7";
+    } else {
+        echo "Has perdido. Vuelve a intentarlo";
+    }
 ?>
 
 <!DOCTYPE html>
