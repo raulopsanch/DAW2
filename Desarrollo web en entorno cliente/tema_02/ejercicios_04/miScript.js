@@ -1,4 +1,4 @@
-/* Crea una función que recorra una cadena y separe los caracteres con un
+/* Ejercicio 1. Crea una función que recorra una cadena y separe los caracteres con un
 guión (Que no aparezca guión al final). */
 function Ej1() {
   let cadena = "hola";
@@ -14,7 +14,7 @@ function Ej1() {
   alert(result);
 }
 
-/* Función que defina una cadena, la corte y la meta en un array. Luego debe
+/* Ejercicio 2. Función que defina una cadena, la corte y la meta en un array. Luego debe
 recorrer el array e indicar que en el índice X del array está tal cadena. */
 function Ej2() {}
 
