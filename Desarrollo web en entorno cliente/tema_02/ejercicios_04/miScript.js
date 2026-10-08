@@ -27,4 +27,6 @@ Recorre la matriz y muestra los elementos separados por “#”, mostrando el me
 “Indice X: elem1#elem2#elem3” */
 function Ej3() {
   let anidado1 = ["anidado1", "anidado2", "anidado3"];
+  let anidado2 = ["a1", "a2", "a3"];
+  let matriz = [anidado1, anidado2];
 }
