@@ -127,3 +127,138 @@ function Modificar() {
     alert("No existe el producto en la cesta");
   }
 }
+
+/* Ejercicio 8. Crea un programa que pida al usuario 6 números y luego los muestre en
+orden inverso (pista: usa un array para almacenarlos y "for" para mostrarlos). */
+function Ej8() {
+  let numeros = [];
+  let texto = "";
+  let textoInverso = "";
+
+  for (let i = 0; i < 6; i++) {
+    let n = parseInt(prompt("Introduce un número: "));
+    numeros.push(n);
+  }
+
+  for (let i = 0; i < numeros.length; i++) {
+    texto += numeros[i] + " ";
+  }
+  alert(texto);
+
+  for (let j = numeros.length - 1; j >= 0; j--) {
+    textoInverso += numeros[j] + " ";
+  }
+  alert(textoInverso);
+}
+
+/* Ejercicio 9. Crea un programa que pregunte al usuario cuantos números va a introducir
+(por ejemplo, 5), le pida todos esos números, los guarde en un array y finalmente
+calcule y muestre la media de esos números. */
+function Ej9() {
+  let nums = [];
+  let sum = 0;
+  let cantidad = parseInt(prompt("¿De qué tamaño quieres el array?: "));
+
+  for (let i = 0; i < cantidad; i++) {
+    let num = parseInt(prompt("Introduce un número: "));
+    nums.push(num);
+  }
+
+  let i = 0;
+  for (const numero of nums) {
+    sum += numero;
+  }
+
+  alert(`La media del array es: ${sum / nums.length}`);
+}
+
+/* Ejercicio 10. Crea un array de 100 elementos. El valor del primer elemento será 1, valor
+del segundo elemento será 2, y así sucesivamente, de tal forma que el último elemento
+del array tendrá el valor 100. Calcula la media de todos los elementos del array. */
+function Ej10() {
+  let nums = [];
+  let sum = 0;
+
+  for (let i = 1; i <= 100; i++) {
+    nums.push(i);
+  }
+
+  for (let j = 0; j < nums.length; j++) {
+    sum += nums[j];
+  }
+
+  alert(`La media del array es: ${sum / 100}`);
+}
+
+/* Ejercicio 11. Un programa que pida al usuario 10 números, calcule su media y luego
+muestre los que están por encima de la media. */
+function Ej11() {
+  let numeros = [];
+  let suma = 0;
+  let text = "";
+
+  for (let i = 0; i < 10; i++) {
+    let n = parseInt(prompt("Introduce un número: "));
+    numeros.push(n);
+  }
+
+  for (let j = 0; j < numeros.length; j++) {
+    suma += numeros[j];
+  }
+
+  let media = suma / numeros.length;
+
+  for (let k = 0; k < numeros.length; k++) {
+    if (numeros[k] > media) {
+      text += numeros[k] + " ";
+    }
+  }
+  alert(text);
+}
+
+/* Ejercicio 12. Desarrolla un programa que pedirá nombres al usuario hasta que se
+introduzca un nombre vacío, momento en el que dejarán de pedirse más nombres y se
+mostrará en pantalla la lista de los nombres que se han introducido ordenados
+alfabéticamente. */
+function Ej12() {
+  let nombres = [];
+  let texto = "";
+
+  let name = prompt("Introduce un nombre: ");
+  while (name.length !== 0) {
+    nombres.push(name);
+    name = prompt("Introduce un nombre: ");
+  }
+
+  nombres.sort();
+  for (let j = 0; j < nombres.length; j++) {
+    if (j === nombres.length - 1) {
+      texto += nombres[j];
+    } else {
+      texto += nombres[j] + ", ";
+    }
+  }
+  alert(texto);
+}
+
+/* Ejercicio 13. Escribe un script para generar un array de dos dimensiones (matriz). Se le
+pedirá al usuario primero el tamaño de la matriz (que será cuadrada). 
+Y a continuación le irá pidiendo el valor de cada celda.*/
+function Ej13() {
+  let tamanio_matriz = parseInt(prompt("Introduce el tamaño de la matriz: "));
+  let matriz = [];
+
+  for (let i = 0; i < tamanio_matriz; i++) {
+    let fila = [];
+    for (let j = 0; j < tamanio_matriz; j++) {
+      let valor = parseInt(prompt("Introduce un número: "));
+      fila.push(valor);
+    }
+  }
+
+  let texto = "";
+  for (let k = 0; k < tamanio_matriz; k++) {
+    texto += matriz[k].join("  ") + "\n";
+  }
+  alert(texto);
+}
