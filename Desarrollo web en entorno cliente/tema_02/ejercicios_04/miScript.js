@@ -263,3 +263,48 @@ function Ej13() {
   }
   alert(texto);
 }
+
+/* Ejercicio 14. Crear un programa que pida una nota (número) y muestre la calificación según la nota. Si la nota no es entre 0 y 10 mostrará el error “Nota errónea”: 
+    0-3: Muy deficiente 
+    3-5: Insuficiente 
+    5-6: Suficiente 
+    6-7: Bien 
+    7-9: Notable 
+    9-10: Sobresaliente  */
+function Ej14() {
+  let nota = parseFloat(prompt("Introduce una nota: "));
+
+  if (nota < 0 || nota > 10) {
+    alert("Nota errónea");
+  } else if (nota >= 0 && nota < 3) {
+    alert("Muy deficiente");
+  } else if (nota >= 3 && nota < 5) {
+    alert("Insuficiente");
+  } else if (nota >= 5 && nota < 6) {
+    alert("Suficiente");
+  } else if (nota >= 6 && nota < 7) {
+    alert("Bien");
+  } else if (nota >= 7 && nota < 9) {
+    alert("Notable");
+  } else {
+    alert("Sobresaliente");
+  }
+}
+
+/* Ejercicio 15. Programa que pida 2 números y muestre todos los números impares que hay entre estos 2 números introducidos (ambos inclusive) separados por un guión. Sin usar arrays y sin que quede un guión al final.  */
+function Ej15() {
+  let num1 = parseInt(prompt("Introduce un número: "));
+  let num2 = parseInt(prompt("Introduce un número: "));
+  let texto = "";
+
+  for (let i = num1; i <= num2; i++) {
+    if (i % 2 == 1) {
+      if (i == num1) {
+        texto += i;
+      } else {
+        texto += " - " + i;
+      }
+    }
+  }
+  alert(texto);
+}
