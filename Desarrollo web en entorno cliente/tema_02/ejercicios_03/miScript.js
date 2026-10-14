@@ -1,9 +1,11 @@
+// Actividad 1. Crea un programa que pida al usuario un número y diga si es par.
 function Ej1() {
   let num = parseInt(prompt("Introduce un número: "));
 
   alert(`${num} es ${num % 2 == 0 ? "par" : "impar"}`);
 }
 
+// Actividad 2. Crea un programa que pida al usuario dos números y diga cuál es el mayor de ellos.
 function Ej2() {
   let num1 = parseInt(prompt("Introduce el primer número: "));
   let num2 = parseInt(prompt("Introduce el segundo número: "));
@@ -11,6 +13,7 @@ function Ej2() {
   alert(`${num1} es ${num1 > num2 ? "es mayor" : "es menor"}`);
 }
 
+/* Actividad 3. Crea un programa que pida al usuario dos números y diga si el primero es múltiplo del segundo.  */
 function Ej3() {
   let num1 = parseInt(prompt("Introduce el primer número: "));
   let num2 = parseInt(prompt("Introduce el segundo número: "));
@@ -18,10 +21,11 @@ function Ej3() {
   alert(
     `${num1} ${
       num1 % num2 == 0 ? " es múltipo" : " no es múltiplo "
-    } de ${num2}`
+    } de ${num2}`,
   );
 }
 
+/* Actividad 4. Crea un programa que pida al usuario dos números. Si el segundo no es cero, mostrará el resultado de dividir el primero entre el segundo. Por el contrario, si el segundo número es cero, escribirá "Error: No se puede dividir entre cero".  */
 function Ej4() {
   let num1 = parseInt(prompt("Introduce el primer número: "));
   let num2 = parseInt(prompt("Introduce el segundo número: "));
@@ -29,6 +33,7 @@ function Ej4() {
   alert(`${num2 != 0 ? num1 / num2 : "No se puede dividir por 0"}`);
 }
 
+/* Actividad 5. Crea un programa que pida al usuario dos números y diga si son iguales o, en caso contrario, cuál es el mayor de ellos. */
 function Ej5() {
   let num1 = parseInt(prompt("Introduce el primer número: "));
   let num2 = parseInt(prompt("Introduce el segundo número: "));
@@ -42,6 +47,7 @@ function Ej5() {
   }
 }
 
+/* Actividad 6. Necesitamos un programa que muestre los números del 10 al 20, ambos inclusive. Y a continuación, muestre los números del 20 al 10, es decir, de mayor a menor.  */
 function Ej6() {
   let mensaje = "";
   for (let i = 10; i < 21; i++) {
@@ -56,6 +62,7 @@ function Ej6() {
   alert(mensaje);
 }
 
+// Actividad 7. Crea un programa que escriba en pantalla los números del 1 al 50 que sean múltiplos de 3.
 function Ej7() {
   let mensaje = "";
   for (let i = 1; i < 51; i++) {
@@ -66,6 +73,7 @@ function Ej7() {
   alert(mensaje);
 }
 
+/* Actividad 8. Crea un programa que muestre los números del 100 al 200 (ambos incluidos) que sean divisibles entre 7 y a la vez entre 3. */
 function Ej8() {
   let mensaje = "";
   for (let i = 100; i < 201; i++) {
@@ -76,6 +84,12 @@ function Ej8() {
   alert(mensaje);
 }
 
+/* Actividad 9. Crea un programa que muestre la tabla de multiplicar del 9: 
+  9 x 0 = 0 
+  9 x 1 = 9 
+  9 x 2 = 18 
+  … 
+  9 x 10 = 90  */
 function Ej9() {
   let mensaje = "";
 
@@ -85,6 +99,7 @@ function Ej9() {
   alert(mensaje);
 }
 
+//Actividad 10. Crea un programa que muestre los primeros ocho números pares: 2 4 6 8 10 12 14 16.
 function Ej10() {
   let i = 1;
   let pares = 0;
@@ -100,6 +115,7 @@ function Ej10() {
   alert(mensaje);
 }
 
+//Actividad 11. Crea un programa que muestre los números del 15 al 5, descendiendo
 function Ej11() {
   let mensaje = "";
 
@@ -110,6 +126,10 @@ function Ej11() {
   alert(mensaje);
 }
 
+/* Actividad 12. Crea un programa que pida al usuario el ancho (por ejemplo, 4) y el alto (por ejemplo, 3) y muestre un rectángulo formado por esa cantidad de asteriscos:
+ ****
+ ****
+ ****  */
 function Ej12() {
   let alto = parseInt(prompt("Introduce el alto: "));
   let ancho = parseInt(prompt("Introduce el ancho: "));
@@ -123,6 +143,11 @@ function Ej12() {
   alert(resultado);
 }
 
+/* Actividad 13. Lo mismo que el ejercicio anterior, pero esta vez mostrará una diagonal con otro carácter:    
+    O*** 
+    *O** 
+    **O* 
+    ***O  */
 function Ej13() {
   let alto = parseInt(prompt("Introduce el alto: "));
   let ancho = parseInt(prompt("Introduce el ancho: "));
@@ -141,6 +166,7 @@ function Ej13() {
   alert(resultado);
 }
 
+/* Actividad 14. Crea un programa que pida al usuario su identificador y contraseña de manera indefinida hasta que introduzca el identificador “alibaba” y la contraseña “sesamo”. Si al tercer intento no ha introducido los datos correctos, mostrará un mensaje diciendo que el identificador/contraseña no son correctos. */
 function Ej14() {
   let intentos = 0;
   let usuario = "";
@@ -163,6 +189,7 @@ function Ej14() {
   }
 }
 
+/* Actividad 15. Crea un "calculador de cuadrados": pedirá al usuario un número y mostrará su cuadrado. Se repetirá mientras el número introducido no sea cero.  */
 function Ej15() {
   let numero;
 
@@ -177,7 +204,8 @@ function Ej15() {
   } while (numero != 0);
 }
 
-function Ej17() {
+/* Actividad 16. Crea un programa que contenga un bucle sin fin que muestra el mensaje "Hola" con alert. Cuando llegue a 10 vueltas, se detendrá.  */
+function Ej16() {
   let contador = 1;
 
   while (true) {

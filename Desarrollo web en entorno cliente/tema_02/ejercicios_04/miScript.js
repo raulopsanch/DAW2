@@ -254,6 +254,7 @@ function Ej13() {
       let valor = parseInt(prompt("Introduce un número: "));
       fila.push(valor);
     }
+    matriz.push(fila);
   }
 
   let texto = "";
