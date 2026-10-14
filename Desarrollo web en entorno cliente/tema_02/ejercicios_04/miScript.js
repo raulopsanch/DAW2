@@ -257,11 +257,11 @@ function Ej13() {
     matriz.push(fila);
   }
 
-  let texto = "";
-  for (let k = 0; k < tamanio_matriz; k++) {
-    texto += matriz[k].join("  ") + "\n";
+  let result = "";
+  for (let k = 0; k < matriz.length; k++) {
+    result += matriz[k].join("  ") + "\n";
   }
-  alert(texto);
+  alert(result);
 }
 
 /* Ejercicio 14. Crear un programa que pida una nota (número) y muestre la calificación según la nota. Si la nota no es entre 0 y 10 mostrará el error “Nota errónea”: 
@@ -307,4 +307,28 @@ function Ej15() {
     }
   }
   alert(texto);
+}
+
+/* Ejercicio 16. Realiza un script que pida cadenas de texto hasta que se pulse cancelar en
+un confirm. Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con
+un guión. */
+function Ej16() {}
+
+/* Ejercicio 17. Realiza un script que escriba una pirámide del 1 al 30 de la siguiente
+forma:
+  1
+  22
+  333
+  4444
+  55555
+  666666 */
+function Ej17() {
+  let result = "";
+
+  for (let i = 1; i <= 30; i++) {
+    let linea = i.toString().repeat(i);
+
+    result += linea + "\n";
+  }
+  alert(result);
 }
