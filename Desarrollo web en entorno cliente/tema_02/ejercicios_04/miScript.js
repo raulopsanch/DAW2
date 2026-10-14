@@ -299,7 +299,7 @@ function Ej15() {
 
   for (let i = num1; i <= num2; i++) {
     if (i % 2 == 1) {
-      if (i == num1) {
+      if (i == num1 || i == num1 + 1) {
         texto += i;
       } else {
         texto += " - " + i;
