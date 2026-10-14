@@ -208,11 +208,12 @@ function Ej11() {
 
   let media = suma / numeros.length;
 
-  for (let k = 0; k < numeros.length; k++) {
-    if (numeros[k] > media) {
+  for (const numero of numeros) {
+    if (numero > media) {
       text += numeros[k] + " ";
     }
   }
+
   alert(text);
 }
 
@@ -225,14 +226,14 @@ function Ej12() {
   let texto = "";
 
   let name = prompt("Introduce un nombre: ");
-  while (name.length !== 0) {
+  while (name.length !== 0 && name.trim() !== "") {
     nombres.push(name);
     name = prompt("Introduce un nombre: ");
   }
 
   nombres.sort();
   for (let j = 0; j < nombres.length; j++) {
-    if (j === nombres.length - 1) {
+    if (j == nombres.length - 1) {
       texto += nombres[j];
     } else {
       texto += nombres[j] + ", ";
@@ -312,7 +313,15 @@ function Ej15() {
 /* Ejercicio 16. Realiza un script que pida cadenas de texto hasta que se pulse cancelar en
 un confirm. Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con
 un guión. */
-function Ej16() {}
+function Ej16() {
+  let cadenas = [];
+  let confirmado = confirm("¿Desea continuar?");
+
+  let cadena = prompt("Introduce una cadena: ");
+  while (confirmado) {
+    cadenas.push(cadena);
+  }
+}
 
 /* Ejercicio 17. Realiza un script que escriba una pirámide del 1 al 30 de la siguiente
 forma:
