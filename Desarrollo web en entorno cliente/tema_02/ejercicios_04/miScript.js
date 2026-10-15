@@ -225,18 +225,16 @@ function Ej12() {
   let nombres = [];
   let texto = "";
 
-  let name = prompt("Introduce un nombre: ");
-  while (name.length !== 0 && name.trim() !== "") {
+  do {
+    let name = prompt("Introduce un nombre");
     nombres.push(name);
-    name = prompt("Introduce un nombre: ");
-  }
+  } while (name.length != 0);
 
-  nombres.sort();
-  for (let j = 0; j < nombres.length; j++) {
-    if (j == nombres.length - 1) {
-      texto += nombres[j];
+  for (let i = 0; i < nombres.length; i++) {
+    if (nombres[i] == 0) {
+      texto += nombres[i];
     } else {
-      texto += nombres[j] + ", ";
+      texto += ", " + nombres[i];
     }
   }
   alert(texto);
@@ -275,20 +273,27 @@ function Ej13() {
 function Ej14() {
   let nota = parseFloat(prompt("Introduce una nota: "));
 
-  if (nota < 0 || nota > 10) {
-    alert("Nota errónea");
-  } else if (nota >= 0 && nota < 3) {
-    alert("Muy deficiente");
-  } else if (nota >= 3 && nota < 5) {
-    alert("Insuficiente");
-  } else if (nota >= 5 && nota < 6) {
-    alert("Suficiente");
-  } else if (nota >= 6 && nota < 7) {
-    alert("Bien");
-  } else if (nota >= 7 && nota < 9) {
-    alert("Notable");
-  } else {
-    alert("Sobresaliente");
+  switch (true) {
+    case nota >= 0 && nota < 3:
+      alert("Muy deficiente");
+      break;
+    case nota >= 3 && nota < 5:
+      alert("Insuficiente");
+      break;
+    case nota >= 5 && nota < 6:
+      alert("Suficiente");
+      break;
+    case nota >= 6 && nota < 7:
+      alert("Bien");
+      break;
+    case nota >= 7 && nota < 9:
+      alert("Notable");
+      break;
+    case nota <= 10:
+      alert("Sobresaliente");
+      break;
+    default:
+      alert("Nota errónea");
   }
 }
 
@@ -387,4 +392,15 @@ function Ej18() {
     }
   }
   alert(result);
+}
+
+/* Ejercicio 19. Realiza un script que pida número de filas y columnas y escriba una tabla.
+Dentro cada una de las celdas deberá escribirse un número consecutivo en orden
+descendente. Si, por ejemplo, la tabla es de 7×5 los números irán del 35 al 1. */
+function Ej19() {
+  let filas = parseInt(prompt("Introduce el número de filas: "));
+  let columnas = parseInt(prompt("Introduce el número de columnas: "));
+  let total = filas * columnas;
+  let tabla = [];
+  let result = "";
 }
