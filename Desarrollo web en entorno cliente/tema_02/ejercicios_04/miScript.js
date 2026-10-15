@@ -315,12 +315,24 @@ un confirm. Al salir con “cancelar” deben mostrarse todas las cadenas concat
 un guión. */
 function Ej16() {
   let cadenas = [];
-  let confirmado = confirm("¿Desea continuar?");
+  let result = "";
 
   let cadena = prompt("Introduce una cadena: ");
-  while (confirmado) {
+
+  while (true) {
     cadenas.push(cadena);
+    let confirmado = confirm("¿Desea continuar?");
+    if (!confirmado) {
+      break;
+    }
+    cadena = prompt("Introduce una cadena: ");
   }
+
+  for (const texto of cadenas) {
+    result += texto + "\n";
+  }
+
+  alert(result);
 }
 
 /* Ejercicio 17. Realiza un script que escriba una pirámide del 1 al 30 de la siguiente
@@ -338,6 +350,41 @@ function Ej17() {
     let linea = i.toString().repeat(i);
 
     result += linea + "\n";
+  }
+  alert(result);
+}
+
+/* Ejercicio 18. Realiza un script que escriba los números del 1 al 500, que indique cuales son múltiplos de 4 o de 9 que cada 5 líneas impresas muestre una línea horizontal. Ejemplo: 
+4 es múltiplo de 4 
+8 es múltiplo de 4 
+9 es múltiplo de 9 
+12 es múltiplo de 4 
+16 es múltiplo de 4  
+————————————————————- 
+18 es múltiplo de 9 
+20 es múltiplo de 4 
+24 es múltiplo de 4 
+27 es múltiplo de 9 
+28 es múltiplo de 4  */
+function Ej18() {
+  let mult4 = " es múltiplo de 4";
+  let mult9 = " es múltiplo de 9";
+  let lineasImpresas = 0;
+  let result = "";
+
+  for (let i = 1; i <= 500; i++) {
+    if (i % 4 == 0) {
+      result += i + mult4 + "\n";
+      lineasImpresas++;
+    } else if (i % 9 == 0) {
+      result += i + mult9 + "\n";
+      lineasImpresas++;
+    }
+
+    if (lineasImpresas === 5) {
+      result += "————————————————————- \n";
+      lineasImpresas = 0;
+    }
   }
   alert(result);
 }
