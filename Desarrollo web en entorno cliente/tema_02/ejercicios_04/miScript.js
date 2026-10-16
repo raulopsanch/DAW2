@@ -224,14 +224,19 @@ alfabéticamente. */
 function Ej12() {
   let nombres = [];
   let texto = "";
+  let name;
 
   do {
-    let name = prompt("Introduce un nombre");
-    nombres.push(name);
+    name = prompt("Introduce un nombre");
+    if (name.length > 0) {
+      nombres.push(name);
+    }
   } while (name.length != 0);
 
+  nombres.sort();
+
   for (let i = 0; i < nombres.length; i++) {
-    if (nombres[i] == 0) {
+    if (i == 0) {
       texto += nombres[i];
     } else {
       texto += ", " + nombres[i];
@@ -401,6 +406,47 @@ function Ej19() {
   let filas = parseInt(prompt("Introduce el número de filas: "));
   let columnas = parseInt(prompt("Introduce el número de columnas: "));
   let total = filas * columnas;
-  let tabla = [];
   let result = "";
+
+  for (let i = 0; i < filas; i++) {
+    for (let j = 0; j < columnas; j++) {
+      if (j == 0) {
+        result += total;
+      } else {
+        result += "\t" + total;
+      }
+      total--;
+    }
+    result += "\n";
+  }
+  alert(result);
+}
+
+/* Ejercicio 20. Que pida un número y genere la secuencia de Fibonnaci entre 0 y dicho número (ambos inclusive). Los números deben mostrarse con un espacio entre ellos. La secuencia se calcula sumando los 2 anteriores, siendo la secuencia así: 0,1,1,2,3,5,8,13...  */
+function Ej20() {
+  let maximo = parseInt(prompt("Introduce el número de fin: "));
+  let fibonnaci = [];
+
+  if (maximo >= 0) {
+    fibonnaci.push(0);
+  }
+
+  if (maximo >= 1) {
+    fibonnaci.push(1);
+  }
+
+  let a = 0;
+  let b = 1;
+  let siguiente = a + b;
+
+  while (siguiente <= maximo) {
+    fibonnaci.push(siguiente);
+    a = b;
+    b = siguiente;
+    siguiente = a + b;
+  }
+
+  let resultado = fibonnaci.join(", ");
+
+  alert(resultado);
 }
