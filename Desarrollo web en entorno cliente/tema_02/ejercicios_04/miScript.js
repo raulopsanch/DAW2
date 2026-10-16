@@ -325,24 +325,13 @@ un confirm. Al salir con “cancelar” deben mostrarse todas las cadenas concat
 un guión. */
 function Ej16() {
   let cadenas = [];
-  let result = "";
 
-  let cadena = prompt("Introduce una cadena: ");
-
-  while (true) {
+  do {
+    let cadena = prompt("Introduce una cadena: ");
     cadenas.push(cadena);
-    let confirmado = confirm("¿Desea continuar?");
-    if (!confirmado) {
-      break;
-    }
-    cadena = prompt("Introduce una cadena: ");
-  }
+  } while (confirm("¿Desea continuar"));
 
-  for (const texto of cadenas) {
-    result += texto + "\n";
-  }
-
-  alert(result);
+  alert(cadenas.join(" - "));
 }
 
 /* Ejercicio 17. Realiza un script que escriba una pirámide del 1 al 30 de la siguiente
@@ -377,17 +366,20 @@ function Ej17() {
 27 es múltiplo de 9 
 28 es múltiplo de 4  */
 function Ej18() {
-  let mult4 = " es múltiplo de 4";
-  let mult9 = " es múltiplo de 9";
   let lineasImpresas = 0;
   let result = "";
 
   for (let i = 1; i <= 500; i++) {
     if (i % 4 == 0) {
-      result += i + mult4 + "\n";
+      result += i + " es múltiplo de 4" + "\n";
       lineasImpresas++;
     } else if (i % 9 == 0) {
-      result += i + mult9 + "\n";
+      result += i + " es múltiplo de 9" + "\n";
+      lineasImpresas++;
+    } else if (i % 4 == 0 && i % 9 == 0) {
+      result += i + " es múltipo de 4 y 9" + "\n";
+    } else {
+      result += i;
       lineasImpresas++;
     }
 
@@ -449,4 +441,49 @@ function Ej20() {
   let resultado = fibonnaci.join(", ");
 
   alert(resultado);
+}
+
+/* Ejercicio 21. Hacer una utilidad para sumar metros en una app de running. Al pulsar el
+botón + se suman metros 1 a 1 y al pulsar el botón - se restan. El botón “+ Decenas”
+suma los metros en decenas (de 10 en 10), es decir que, si estoy en 22 metros, al darle al
+botón iré a 30 metros y si vuelvo a pulsar voy a 40 metros. El botón “- Decenas” hace lo
+contrario, si estoy en 23 metros, iré a 20 metros y si vuelvo a pulsar iré a 10 metros y así
+hasta que sea cero, no se debe permitir poner metros en negativo. */
+
+let metros = parseFloat(prompt("Introduce la cantidad de metros: "));
+
+if (metros < 0) {
+  alert("Error: los metros deben estar en positivo");
+} else {
+  alert(metros);
+}
+
+function Mas() {
+  metros++;
+  alert(metros);
+}
+
+function MasDecenas() {
+  metros += 10;
+  alert(metros);
+}
+
+function MenosDecenas() {
+  metros -= 10;
+  if (metros < 0) {
+    alert("Error: los metros deben estar en positivo");
+    metros = 0;
+  } else {
+    alert(metros);
+  }
+}
+
+function Menos() {
+  metros--;
+  if (metros < 0) {
+    alert("Error: los metros deben estar en positivo");
+    metros = 0;
+  } else {
+    alert(metros);
+  }
 }
