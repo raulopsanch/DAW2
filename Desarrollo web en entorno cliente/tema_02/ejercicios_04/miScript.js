@@ -464,12 +464,22 @@ function Mas() {
 }
 
 function MasDecenas() {
-  metros += 10;
+  if (metros % 2 != 0) {
+    metros = metros - (metros % 2) + 10;
+  } else {
+    metros += 10;
+  }
+
   alert(metros);
 }
 
 function MenosDecenas() {
-  metros -= 10;
+  if (metros % 2 != 0) {
+    metros -= metros % 2;
+  } else {
+    metros -= 10;
+  }
+
   if (metros < 0) {
     alert("Error: los metros deben estar en positivo");
     metros = 0;
