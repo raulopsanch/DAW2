@@ -450,7 +450,7 @@ botón iré a 30 metros y si vuelvo a pulsar voy a 40 metros. El botón “- Dec
 contrario, si estoy en 23 metros, iré a 20 metros y si vuelvo a pulsar iré a 10 metros y así
 hasta que sea cero, no se debe permitir poner metros en negativo. */
 
-let metros = parseFloat(prompt("Introduce la cantidad de metros: "));
+let metros = parseInt(prompt("Introduce la cantidad de metros: "));
 
 if (metros < 0) {
   alert("Error: los metros deben estar en positivo");
@@ -466,6 +466,7 @@ function Mas() {
 function MasDecenas() {
   if (metros % 2 != 0) {
     metros = metros - (metros % 2) + 10;
+    alert(metros % 2);
   } else {
     metros += 10;
   }
