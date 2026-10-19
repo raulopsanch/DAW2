@@ -1,5 +1,5 @@
 <?php
-    $numero = 121;
+    $numero = rand(100,999);
 
     $centena = (int)($numero / 100);
     $unidades = $numero % 10;
