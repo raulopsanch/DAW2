@@ -1,0 +1,9 @@
+.texto_azul_con_fondo_verde {
+  color: blue;
+  background-color: green;
+}
+
+.texto_verde_con_fondo_azul {
+  color: green;
+  background-color: blue;
+}
