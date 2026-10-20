@@ -6,8 +6,7 @@
         echo "<br />";
     }
 
-    echo "<br />";
-    echo "<br />";
+    echo "<br /> <br />";
 
     for ($k = 0; $k < 11; $k++) {
         for ($l = 0; $l < $k; $l++) {
