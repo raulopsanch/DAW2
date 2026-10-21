@@ -190,6 +190,26 @@ const productos = [
     { id: 2, nombre: "Teclado", precio: 50 },
     { id: 3, nombre: "Ratón", precio: 25 },
 ]; */
+function Ej13() {
+  const productos = [
+    { id: 1, nombre: "Laptop", precio: 1200 },
+    { id: 2, nombre: "Teclado", precio: 50 },
+    { id: 3, nombre: "Ratón", precio: 25 },
+  ];
+
+  const nombres = productos.map((producto) => producto.nombre);
+  alert(nombres);
+}
 
 /* Ejercicio 7. Usando for y continue, escribe un bucle que recorra los números del 1 al 20
 y sume solo aquellos que sean múltiplos de 3, mostrando el resultado final por consola */
+function Ej14() {
+  let total = 0;
+  for (let i = 1; i < 21; i++) {
+    if (i % 3 !== 0) {
+      continue;
+    }
+    total += i;
+  }
+  alert(total);
+}
