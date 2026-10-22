@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .producto {
+        padding: 10px 14px;
+        margin-bottom: 8px;
+        border: 1px solid #e2ddd2;
+        border-radius: 6px;
+      }
+      .producto.agotado {
+        opacity: 0.5;
+        text-decoration: line-through;
+      }
+      .producto:not(.agotado):hover {
+        border-color: #4b3563;
+        background: #efe7f2;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="producto">Teclado mecánico</div>
+    <div class="producto agotado">Ratón inalámbrico (agotado)</div>
+    <div class="producto">Monitor de 27 pulgadas</div>
+  </body>
+</html>

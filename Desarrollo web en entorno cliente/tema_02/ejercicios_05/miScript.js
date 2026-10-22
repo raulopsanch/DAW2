@@ -148,7 +148,7 @@ pares (en los índices pares del array). Usad este array: numeros = [10, 20, 30,
 function Ej9() {
   let numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90];
 
-  const indicesPares = numeros.filter((numero, indice) => indice % 2 == 0);
+  const indicesPares = numeros.filter((_, indice) => indice % 2 == 0);
   alert(indicesPares);
 }
 
@@ -157,10 +157,16 @@ function Ej9() {
 function Ej10() {
   let numeros = [12, 45, 67, 89, 23, 56, 34, 78];
 
-  const mayor = numeros.reduce((acumulador, actual) =>
-    actual > acumulador ? actual : acumulador,
-  );
+  const mayor = numeros.reduce((maximo, num) => {
+    if (num > maximo) {
+      return num;
+    }
+    return maximo;
+  }, numeros[0]);
   alert(mayor);
+
+  //numeros.sort((a, b) => b - a));
+  //alert(numeros[0]);
 }
 
 /* Ejercicio 4. Sumarle el IVA a todos los elementos del array.
@@ -169,7 +175,7 @@ function Ej11() {
   const precios = [100, 200, 300, 400, 500];
 
   const preciosConIva = precios.map((precio) =>
-    Number((precio * 1.21).toFixed(2)),
+    Number((precio * 1.21).toFixed(2))
   );
   alert(preciosConIva);
 }
