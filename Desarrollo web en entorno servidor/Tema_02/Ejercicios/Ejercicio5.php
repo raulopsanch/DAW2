@@ -22,5 +22,18 @@
             break;
         default:
             echo "Error: nota inválida";
+
     }
+    echo "<br/>";
+
+    $result = match (true) {
+        $nota >= 0 && $nota < 5 => "F",
+        $nota >= 5 && $nota < 6 => "D",
+        $nota >= 6 && $nota < 7 => "C",
+        $nota >= 7 && $nota < 9 => "B",
+        $nota >= 9 && $nota <= 10 => "A",
+        default => "Error nota inválida"
+    };
+
+    echo "Calificación: " . $result;
 ?>
