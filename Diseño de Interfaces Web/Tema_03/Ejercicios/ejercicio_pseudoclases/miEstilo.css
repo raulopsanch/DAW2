@@ -1,0 +1,23 @@
+a.e1:link {
+  color: white;
+  background-color: blue;
+}
+
+a.e1:active {
+  color: pink;
+  background-color: #ddd;
+}
+
+a.e1:visited {
+  color: #555;
+  background-color: #000055;
+}
+
+a.e1:hover {
+  color: yellow;
+  background-color: red;
+}
+
+.p3 {
+  width: 50%;
+}
