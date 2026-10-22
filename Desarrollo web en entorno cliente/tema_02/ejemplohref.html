@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .paso {
+        padding: 8px 14px;
+        margin: 8px 0;
+        border-left: 4px solid #e2ddd2;
+        background: #fff;
+      }
+      .paso:target {
+        /* el paso al que apunta la URL */
+        border-left-color: #a9812e;
+        background: #efe7f2;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="indice">
+      <a href="#paso1">Paso 1</a>
+      <a href="#paso2">Paso 2</a>
+      <a href="#paso3">Paso 3</a>
+    </nav>
+    <section id="paso1" class="paso">
+      <h4>Paso 1: Preparar</h4>
+      <p>Reúne los ingredientes.</p>
+    </section>
+    <section id="paso2" class="paso">
+      <h4>Paso 2: Mezclar</h4>
+      <p>Combina todo en un bol.</p>
+    </section>
+    <section id="paso3" class="paso">
+      <h4>Paso 3: Hornear</h4>
+      <p>Cuarenta minutos a 180 grados.</p>
+    </section>
+  </body>
+</html>
