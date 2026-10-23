@@ -113,11 +113,11 @@ let intentos = 0;
 while (intentos < 3) {
 console.log('Intento fallido');
 } */
-let intentos = 0;
-while (intentos < 3) {
-  console.log("Intento fallido");
-  intentos++;
-}
+// let intentos = 0;
+// while (intentos < 3) {
+//   console.log("Intento fallido");
+//   intentos++;
+// }
 
 /* Ejercicio 7. Usando for y continue, escribe un bucle que recorra los números del 1 al 20
 y sume solo aquellos que sean múltiplos de 3, mostrando el resultado final por consola. */
@@ -218,4 +218,47 @@ function Ej14() {
     total += i;
   }
   alert(total);
+}
+
+//Ejercicios páginas 51 - 52
+/* Ejercicio 1. Escribe un script con, al menos, estos valores: 3, 3.5, “3”, "3.5", “7aaa”,
+“aaa7” y “hola”. Recorre el array y muestra por consola el resultado de aplicar las
+funciones parseInt, parseFloat, isNan, Number y String, a cada uno de los elementos del
+array. ¿Hay algún resultado que no esperabas? */
+function Ej15() {
+  let array = [3, 3.5, "3", "3.5", "7aaa", "aaa7", "hola"];
+  let rdo = "";
+
+  for (const item of array) {
+    rdo += `parseInt a ${item} = ${parseInt(item)}\n`;
+    rdo += `\nparseFloat a ${item} = ${parseFloat(item)}\n`;
+    rdo += `\nisNan a ${item} = ${isNaN(item)}\n`;
+    rdo += `\nNumber a ${item} = ${Number(item)}\n`;
+    rdo += `\nCadena a ${item} = ${String(item)}\n`;
+  }
+
+  alert(rdo);
+}
+
+/* Ejercicio 2. Crea una función llamada "DibujarLinea3", que dibuje una línea con 3
+asteriscos en la pantalla. */
+function Ej16() {
+  let asteriscos = DibujarLinea3();
+  alert(asteriscos);
+  document.querySelector("#rdo").innerHTML = asteriscos;
+}
+
+function DibujarLinea3() {
+  return "* * *";
+}
+
+/* Ejercicio 3. Crea una función llamada "DibujarCuadrado3x3", que dibuje un cuadrado
+(en la pantalla) formado por 3 filas con 3 asteriscos cada una (esta función deberá
+llamar a la función creada en el ejercicio anterior). */
+function Ej17() {
+  document.querySelector("#rdo").innerHtml = "";
+  for (let i = 0; i < 3; i++) {
+    let asteriscos = DibujarLinea3();
+    document.querySelector("#rdo").innerHTML += asteriscos + "<br/>";
+  }
 }
