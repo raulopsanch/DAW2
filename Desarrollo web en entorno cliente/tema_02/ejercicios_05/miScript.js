@@ -175,7 +175,7 @@ function Ej11() {
   const precios = [100, 200, 300, 400, 500];
 
   const preciosConIva = precios.map((precio) =>
-    Number((precio * 1.21).toFixed(2))
+    Number((precio * 1.21).toFixed(2)),
   );
   alert(preciosConIva);
 }
@@ -261,4 +261,206 @@ function Ej17() {
     let asteriscos = DibujarLinea3();
     document.querySelector("#rdo").innerHTML += asteriscos + "<br/>";
   }
+}
+
+/*Ejercicio 4. Crea una función llamada "DibujarLinea", que dibuje una línea con X 
+asteriscos (en la pantalla). La función tendrá un parámetro de entrada con el número de 
+asteriscos a mostrar */
+function dibujarLinea(num) {
+  let contador = 0;
+  let result = "";
+  while (contador < num) {
+    result += "* ";
+    contador++;
+  }
+  return result;
+}
+function Ej18() {
+  let num = parseInt(prompt("Introduce un número: "));
+  let asteriscos = dibujarLinea(num);
+  document.querySelector("#rdo").innerHTML += asteriscos;
+}
+
+/* Ejercicio 5. Crea una función llamada "DibujarCuadrado", que dibuje un cuadrado 
+formado por X filas con X asteriscos cada una (esta función deberá llamar a la función 
+creada en el ejercicio anterior). El script pedirá al usuario el tamaño del cuadrado, y 
+llamará a la función con ese dato */
+function dibujarCuadrado(num) {
+  let result = "";
+  for (let i = 0; i < num; i++) {
+    result += dibujarLinea(num) + "<br />";
+  }
+  return result;
+}
+function Ej19() {
+  let num = parseInt(prompt("Introduce un número: "));
+  let asteriscos = dibujarCuadrado(num);
+
+  document.querySelector("#rdo").innerHTML += asteriscos;
+}
+
+/* Ejercicio 6. Crea una función "DibujarRectangulo" que dibuje en pantalla un rectángulo 
+del ancho y alto que se indiquen como parámetros. El script pedirá al usuario el tamaño 
+del rectángulo, y llamará a la función con ese dato. */
+function dibujarRectangulo(base, altura) {
+  let result = "";
+
+  for (let i = 0; i < altura; i++) {
+    result += dibujarLinea(base);
+
+    result += "<br />";
+  }
+  return result;
+}
+function Ej20() {
+  let altura = parseInt(prompt("Introduce la altura: "));
+  let base = parseInt(prompt("Introduce la base: "));
+  let rectangulo = dibujarRectangulo(base, altura);
+
+  document.querySelector("#rdo").innerHTML = rectangulo;
+}
+
+/* Ejercicio 7. Crea una función "Cubo" que devuelva el cubo de un número real que se 
+indique como parámetro. La función tendrá que comprobar que el parámetro es un 
+número (o que se pueda convertir a un número), en caso contrario, devolverá false. 
+Prueba esta función para calcular el cubo de 3.2 y el de 5, y también prueba a pasarle 
+“hola” como parámetro. ¿Qué ocurre? */
+function esNumeroValido(valor) {
+  if (
+    typeof valor == "boolean" ||
+    valor === "" ||
+    (typeof valor === "string" && valor.trim() === "")
+  ) {
+    return false;
+  }
+  return true;
+}
+function Cubo(num) {
+  if (!esNumeroValido(num)) {
+    return false;
+  }
+
+  let numero = Number(num);
+
+  return Math.pow(numero, 3);
+}
+function Ej21() {
+  let valor = prompt("Introduce un valor: ");
+
+  alert(Cubo(valor));
+}
+
+/* Ejercicio 8. Crea una función "Menor" que devuelva el menor de dos números que 
+recibirá como parámetros. */
+function menor(a, b) {
+  if (a > b) {
+    return `${a} es mayor`;
+  } else if (b > a) {
+    return `${b} es mayor`;
+  } else {
+    return "Son iguales";
+  }
+}
+function Ej22() {
+  let num1 = parseFloat(prompt("Introduce el primer número: "));
+  let num2 = parseFloat(prompt("Introduce el segundo número: "));
+
+  alert(menor(num1, num2));
+}
+
+/* Ejercicio 9. Crear 4 funciones: PideNumero, EsPositivo, CalculaMitad y HazTodo:
+La función PideNumero, pedirá al usuario que introduzca un número y devuelve el 
+número introducido.
+Las funciones EsPositivo y CalculaMitad, no imprimen nada en la consola, simplemente 
+devuelven los valores correspondientes.
+La función HazTodo no tendrá ningún parámetro, llamará a las otras tres funciones y 
+mostrará la siguiente información en la consola:
+‘El número X es POSITIVO/NEGATIVO’
+‘La mitad de X es Y’
+Fuera de las funciones, solo habrá una llamada a la función HazTodo. */
+function pideNumero(num) {
+  return num;
+}
+function esPositivo(num) {
+  let positivo = num > 0 ? `${num} es positivo` : `${num} es negativo`;
+
+  return positivo;
+}
+function CalculaMitad(num) {
+  return `La mitad de ${num} es ${num / 2}`;
+}
+function hazTodo(num) {
+  let result = "";
+
+  result += pideNumero(num) + "\n" + esPositivo(num) + "\n" + CalculaMitad(num);
+
+  return result;
+}
+function Ej23() {
+  let num = parseFloat(prompt("Introduce un número: "));
+
+  alert(hazTodo(num));
+}
+
+/* Ejercicio 10. Escribe una función que dado un string, devuelva un array con las palabras 
+que forman el string. ¿Qué pasa si el string tiene 3 espacios en blanco seguidos? ¿Se 
+puede solucionar? */
+function Ej24() {
+  let result = "";
+  let texto = prompt("Introduce una cadena de texto: ");
+  let arrayText = texto.split(" ");
+  /* Cuando se ponen 3 espacios seguidos añade como una palabra en medio, que es un gran espacio.
+  para solucionarlo quitamos las palabras que estén vacías usando filter,  */
+  let array = arrayText.filter((palabra) => palabra !== "");
+
+  for (let i = 0; i < array.length; i++) {
+    result += array[i] + "\n";
+  }
+
+  alert(result);
+}
+
+/* Ejercicio 11. Escribe una función que se le pase un nombre completo (string) y 
+devuelve el nombre abreviado (es decir, el nombre y la primera letra del primer 
+apellido, seguido de un punto). Escribe también el código necesario para probarla. */
+function nombreAbreviado(nombreCompleto) {
+  let partes = nombreCompleto.trim().split(" ");
+
+  if (partes.length < 2) {
+    return nombreCompleto;
+  }
+
+  let nombre = partes[0];
+  let apellido = partes[1].charAt(0).toUpperCase();
+
+  return nombre + " " + apellido + ".";
+}
+function Ej25() {
+  let nombre = prompt("Introduce tu nombre: ");
+  let resultado = nombreAbreviado(nombre);
+
+  alert(resultado);
+}
+
+/* Ejercicio 12. Crea una función que oculte parte de una dirección de email. Por ejemplo, 
+si se le pasa “1234567890@gmail.com”, devolverá “12345…@gmail.com”, es decir, 
+sustituye la 2ª mitad del email (antes de la @) por “...”. Escribe también el código 
+necesario para probarla. */
+function ocultarEmail(email) {
+  let partes = email.split("@");
+  let usuario = partes[0];
+  let dominio = partes[1];
+
+  let mitad = Math.floor(usuario.length / 2);
+
+  let usuarioOculto = usuario.substring(0, mitad) + "***";
+
+  return usuarioOculto + "@" + dominio;
+}
+function Ej26() {
+  let email = prompt("Introduce tu email: ");
+
+  let result = ocultarEmail(email);
+
+  alert(result);
 }
