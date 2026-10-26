@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .area {
+        border: 1px dashed #888;
+        padding: 8px;
+      }
+
+      .bloque {
+        width: 220px;
+        padding: 8px;
+        margin-bottom: 8px;
+        background: #4b3563;
+        color: #fff;
+      }
+
+      .centrado {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .derecha {
+        margin-left: auto;
+      }
+
+      .area {
+        border: 1px dashed #888;
+        padding: 8px;
+      }
+
+      .alineada {
+        text-align: center;
+      }
+
+      .bloque {
+        width: 220px;
+        padding: 8px;
+        background: #4b3563;
+        color: #fff;
+      }
+
+      .fila {
+        border: 1px dashed #888;
+        padding: 6px;
+        margin-bottom: 6px;
+      }
+      .izq {
+        text-align: left;
+      }
+      .cen {
+        text-align: center;
+      }
+      .der {
+        text-align: right;
+      }
+      .etiqueta {
+        background: #a9812e;
+        color: #fff;
+        padding: 2px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="area">
+      <div class="bloque">Por defecto (izquierda)</div>
+      <div class="bloque centrado">Márgenes laterales auto</div>
+      <div class="bloque derecha">margin-left: auto</div>
+    </div>
+    <br />
+    <br />
+    <div class="area alineada">
+      <div class="bloque">La caja no se mueve; su texto sí</div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="fila izq"><span class="etiqueta">en línea</span></div>
+    <div class="fila cen"><span class="etiqueta">en línea</span></div>
+    <div class="fila der"><span class="etiqueta">en línea</span></div>
+  </body>
+</html>

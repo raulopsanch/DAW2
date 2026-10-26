@@ -1,0 +1,17 @@
+.pagina {
+  border: 1px dashed #888;
+}
+.lateral,
+.principal {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 0px;
+}
+.lateral {
+  width: 25%;
+  background: #efe7f2;
+}
+.principal {
+  width: 75%;
+  background: #fdf3d0;
+}

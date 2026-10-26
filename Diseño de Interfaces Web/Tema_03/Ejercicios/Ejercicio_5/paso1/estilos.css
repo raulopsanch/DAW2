@@ -1,0 +1,166 @@
+/* =========================================================
+   TOSTADERO ALBA · Paso 1 · Barra de navegación
+
+   PARTE 1: ESTILOS BASE (no los modifiques)
+   Colores, tipografía y aspecto de cada pieza.
+   Aquí no hay ninguna regla de colocación.
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3b2a20;
+  background: #fbf6ee;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* quita las viñetas (se explica en 8.16) */
+}
+
+/* Barra de anuncio */
+.anuncio {
+  padding: 8px 16px;
+  background: #3b2a20;
+  color: #f6e9d6;
+  font-size: 0.875rem;
+}
+
+.anuncio a {
+  text-decoration: underline;
+}
+
+/* Cabecera */
+.cabecera {
+  background: #ffffff;
+  border-bottom: 1px solid #e7dccb;
+}
+
+.logo-texto {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.menu a {
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #c8541e;
+}
+
+.menu a.activo {
+  color: #c8541e;
+  border-bottom-color: #c8541e;
+}
+
+.contador {
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background: #c8541e;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 999px;
+  background: #3b2a20;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #c8541e;
+}
+
+/* Bloque de relleno (marca el sitio del contenido futuro) */
+.relleno {
+  min-height: 240px;
+  margin: 24px;
+  padding: 24px;
+  border: 2px dashed #d9c9b0;
+  border-radius: 12px;
+  color: #8a5a3b;
+}
+
+/* =========================================================
+   PARTE 2: TU CÓDIGO
+   Completa cada regla. Solo colocación: display, width,
+   max-width, margin, padding, text-align y vertical-align.
+   ========================================================= */
+
+/* PASO 1.1: barra de anuncio (texto centrado) */
+.anuncio {
+}
+
+/* PASO 1.2: contenedor (92% con máximo de 1100px, centrado) */
+.contenedor {
+}
+
+/* PASO 1.3: barra con tres zonas en la misma línea
+   (acuérdate de la trampa del espacio en blanco en el HTML) */
+.barra {
+}
+
+.logo,
+.principal,
+.acciones {
+}
+
+.logo {
+}
+
+.principal {
+}
+
+.acciones {
+}
+
+/* PASO 1.4: logo (icono y texto alineados, margen izquierdo de 10px en el texto) */
+.logo img {
+}
+
+.logo-texto {
+}
+
+/* PASO 1.5: menú horizontal centrado */
+.menu li {
+}
+
+.menu a {
+}
+
+/* PASO 1.6: carrito y botón en la misma línea */
+.carrito {
+}
+
+.carrito img {
+}
+
+.btn {
+}
+
+/* PASO 1.7: contador junto al icono */
+.contador {
+}
