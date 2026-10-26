@@ -124,6 +124,7 @@ ul {
 /* PASO 1.3: barra con tres zonas en la misma línea
    (acuérdate de la trampa del espacio en blanco en el HTML) */
 .barra {
+  display: inline-block;
 }
 
 .logo,
