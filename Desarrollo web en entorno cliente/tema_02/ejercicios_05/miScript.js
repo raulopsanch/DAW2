@@ -495,3 +495,23 @@ function ej28() {
 
 /* Ejercicio 15. Crea una función que genere un número aleatorio, entre dos valores dados.
 Utiliza esta función para simular el funcionamiento de un dado. */
+function aleatorio(num1, num2) {
+  let numAleatorio = Math.floor(Math.random() * (num2 - num1 + 1)) + num1;
+
+  return numAleatorio;
+}
+
+function ej29() {
+  let num1 = parseInt(prompt("Introduce el primer número: "));
+  let num2 = parseInt(prompt("Introduce el segundo número: "));
+
+  if (num1 < num2) {
+    alert(aleatorio(num1, num2));
+  } else {
+    alert("Error. El primer número debe ser más chivo");
+  }
+}
+
+/* Ejercicio 16. Define una función que devuelva una cadena de texto con el día actual.
+Además, hay que pasarle el separador. Suponiendo que el separador es “-”, el formato
+de salida será “dd-mm-yyyy”. */
