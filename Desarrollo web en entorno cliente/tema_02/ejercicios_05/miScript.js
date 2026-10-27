@@ -124,7 +124,7 @@ y sume solo aquellos que sean múltiplos de 3, mostrando el resultado final por 
 function Ej7() {
   let suma = 0;
   for (let i = 1; i < 21; i++) {
-    if (i % 3 !== 0) {
+    if (i % 3 != 0) {
       continue;
     }
     suma += i;
@@ -175,7 +175,7 @@ function Ej11() {
   const precios = [100, 200, 300, 400, 500];
 
   const preciosConIva = precios.map((precio) =>
-    Number((precio * 1.21).toFixed(2)),
+    Number((precio * 1.21).toFixed(2))
   );
   alert(preciosConIva);
 }
@@ -185,7 +185,7 @@ const nombres = ['Juan', 'Pedro', 'Luis', 'Ana', 'Maria']; */
 function Ej12() {
   const nombres = ["Juan", "Pedro", "Luis", "Ana", "Maria"];
 
-  const nombresMayuscula = nombres.map((nombre) => nombre.toLocaleUpperCase());
+  const nombresMayuscula = nombres.map((nombre) => nombre.toUpperCase());
   alert(nombresMayuscula);
 }
 
@@ -464,3 +464,34 @@ function Ej26() {
 
   alert(result);
 }
+
+/* Ejercicio 13. Define una función que sustituya los espacios en blanco por un guión y,
+además, convierta todo el texto en minúsculas. Escribe también el código necesario para
+probarla. */
+function cambioTexto(texto) {
+  let cambio = texto.split(" ").join("-").toLowerCase();
+  return cambio;
+}
+function ej27() {
+  let text = prompt("Introduce un texto: ");
+
+  alert(cambioTexto(text));
+}
+
+/* Ejercicio 14. Escribe una función que reciba dos parámetros, string1 y string2, y que
+devuelva true si string1 contiene a string2, o false en caso contrario. */
+function compararString(string1, string2) {
+  if (string1.includes(string2)) {
+    return true;
+  }
+  return false;
+}
+function ej28() {
+  let text1 = "Hola me llamo Raúl";
+  let text2 = "Raúl";
+
+  alert(compararString(text1, text2));
+}
+
+/* Ejercicio 15. Crea una función que genere un número aleatorio, entre dos valores dados.
+Utiliza esta función para simular el funcionamiento de un dado. */
