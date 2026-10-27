@@ -8,7 +8,8 @@
 </head>
 
 <body>-->
-    <?php  $tabla="<table border='1'>" ;  
+    <?php  
+        $tabla="<table border='1'>" ;  
         
         $contador = 1;
         $hasta = 10;
