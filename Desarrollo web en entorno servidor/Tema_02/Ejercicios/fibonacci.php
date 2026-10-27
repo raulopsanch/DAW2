@@ -63,8 +63,7 @@
 <?php
     //numero primo
 
-    $num = 23;
-    //rand(1, 200);
+    $num = rand(1, 200);
 
     if ($num <= 3) {
         echo "$num es primo";
