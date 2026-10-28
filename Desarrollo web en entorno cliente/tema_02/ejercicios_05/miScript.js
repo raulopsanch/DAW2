@@ -435,7 +435,7 @@ function nombreAbreviado(nombreCompleto) {
 
   return nombre + " " + apellido + ".";
 }
-function Ej25() {
+function ej25() {
   let nombre = prompt("Introduce tu nombre: ");
   let resultado = nombreAbreviado(nombre);
 
@@ -453,7 +453,7 @@ function ocultarEmail(email) {
 
   let mitad = Math.floor(usuario.length / 2);
 
-  let usuarioOculto = usuario.substring(0, mitad) + "***";
+  let usuarioOculto = usuario.substring(0, mitad) + "...";
 
   return usuarioOculto + "@" + dominio;
 }
@@ -481,10 +481,7 @@ function ej27() {
 /* Ejercicio 14. Escribe una función que reciba dos parámetros, string1 y string2, y que
 devuelva true si string1 contiene a string2, o false en caso contrario. */
 function compararString(string1, string2) {
-  if (string1.includes(string2)) {
-    return true;
-  }
-  return false;
+  return string1.includes(string2) ? true : false;
 }
 function ej28() {
   let text1 = "Hola me llamo Raúl";
@@ -515,3 +512,15 @@ function ej29() {
 /* Ejercicio 16. Define una función que devuelva una cadena de texto con el día actual.
 Además, hay que pasarle el separador. Suponiendo que el separador es “-”, el formato
 de salida será “dd-mm-yyyy”. */
+function crearFecha(separador) {
+  const fecha = new Date();
+
+  const dia = String(fecha.getDate().padStart(2, "0"));
+  const mes = String(fecha.getMonth() + 1).padStart(2, "0");
+  const anho = fecha.getFullYear();
+
+  return `${dia}${separador}${mes}${separador}${anho}`;
+}
+function ej30() {
+  alert(crearFecha("-"));
+}
