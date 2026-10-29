@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tostadero Alba | Café de especialidad</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ===== INSTRUCCIONES (borra este bloque cuando termines) ===== -->
+  <div style="border:2px dashed #92720A; background:#FDF3D0; color:#5F4B09; padding:18px 22px; margin:18px; font-family:sans-serif; max-width:840px; line-height:1.45;">
+    <p style="margin:0 0 10px; font-weight:bold; font-size:1.1em;">Tostadero Alba · Paso 2 de 4: la portada</p>
+    <p style="margin:0 0 10px;">La barra de navegación del Paso 1 ya está resuelta (las Partes 1 y 2 de <code>estilos.css</code>). Ahora hay que colocar la portada que aparece debajo, con las mismas reglas: solo bloque, en línea, <code>inline-block</code>, <code>text-align</code>, <code>vertical-align</code> y márgenes. Nada de Flexbox, Grid, tablas ni <code>position</code>. Escribe tu CSS en la <strong>Parte 4</strong>, en las zonas marcadas con <code>PASO 2</code>, y compáralo con <code>objetivo.png</code> con la ventana a 1280px.</p>
+    <ol style="margin:0 0 10px; padding-left:22px;">
+      <li><strong>.portada</strong>: relleno de 64px arriba y abajo y ninguno a los lados.</li>
+      <li><strong>Dos columnas</strong>: <code>.portada-texto</code> (52% de ancho) y <code>.portada-imagen</code> (48%) una junto a otra, <strong>centradas en vertical entre sí</strong>. Es la misma trampa del Paso 1: 52 + 48 suman el 100% y el espacio en blanco del HTML las separará. Quítalo con el truco del comentario. Además, el texto lleva un relleno derecho de 48px para separarlo de la imagen.</li>
+      <li><strong>.etiqueta</strong>: la píldora "Tostado cada semana" debe ocupar solo lo que mide su texto (no todo el ancho), con relleno <code>5px 14px</code>.</li>
+      <li><strong>.intro</strong>: el párrafo no pasa de 460px de ancho, para que las líneas no sean demasiado largas.</li>
+      <li><strong>.boton</strong>: los dos botones en la misma línea, con relleno <code>14px 28px</code> y 12px de margen a la derecha.</li>
+      <li><strong>.garantias</strong>: los tres elementos de la lista en una fila, separados 20px entre sí (margen derecho). En cada uno, el icono y el texto se centran en vertical entre sí, con 8px de margen a la derecha del icono.</li>
+      <li><strong>La imagen de la portada</strong> nunca debe salirse de su columna, aunque su tamaño real (560 × 480px) sea mayor, y conserva sus proporciones. Además, <code>vertical-align</code> evita el pequeño hueco que las imágenes dejan por debajo.</li>
+    </ol>
+    <p style="margin:0;">Pista: los botones y la lista ya tienen el aspecto (colores, bordes, tipografía) en la Parte 3. Solo falta su colocación.</p>
+  </div>
+  <!-- ===== FIN DE LAS INSTRUCCIONES ===== -->
+
+  <div class="anuncio">
+    Envío gratis en pedidos desde 25 € · <a href="#">Ver condiciones</a>
+  </div>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <div class="barra">
+
+        <a class="logo" href="#">
+          <img src="img/logo.svg" alt="" width="40" height="40">
+          <span class="logo-texto">Tostadero Alba</span>
+        </a><!--
+        --><nav class="principal" aria-label="Principal">
+          <ul class="menu">
+            <li><a class="activo" href="#">Café</a></li>
+            <li><a href="#">Cafeteras</a></li>
+            <li><a href="#">Suscripción</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav><!--
+        --><div class="acciones">
+          <a class="carrito" href="#">
+            <img src="img/carrito.svg" alt="Carrito" width="26" height="26"><span class="contador">3</span>
+          </a>
+          <a class="btn" href="#">Acceder</a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="contenido">
+  <section class="portada">
+    <div class="contenedor">
+
+      <div class="portada-texto">
+        <p class="etiqueta">Tostado cada semana</p>
+        <h1>Café de especialidad, tostado en Extremadura</h1>
+        <p class="intro">
+          Granos seleccionados de pequeños productores, tostados en lotes
+          cortos y enviados en 24 horas para que llegue a tu taza en su
+          mejor momento.
+        </p>
+        <p class="botones">
+          <a class="boton boton-primario" href="#">Ver el café</a>
+          <a class="boton boton-borde" href="#">Cómo lo tostamos</a>
+        </p>
+        <ul class="garantias">
+          <li><img src="img/envio.svg" alt="" width="28" height="28"> <span>Envío en 24 h</span></li>
+          <li><img src="img/tostado.svg" alt="" width="28" height="28"> <span>Tostado a pedido</span></li>
+          <li><img src="img/seguro.svg" alt="" width="28" height="28"> <span>Pago seguro</span></li>
+        </ul>
+      </div>
+      <div class="portada-imagen">
+        <img src="img/portada.svg" alt="Bolsa de café Tostadero Alba junto a una taza humeante" width="560" height="480">
+      </div>
+
+    </div>
+  </section>
+
+    <p class="relleno">
+      Aquí irá el resto de la página (productos, suscripción, pie...).
+      Lo construiremos en los siguientes pasos.
+    </p>
+  </main>
+
+</body>
+</html>

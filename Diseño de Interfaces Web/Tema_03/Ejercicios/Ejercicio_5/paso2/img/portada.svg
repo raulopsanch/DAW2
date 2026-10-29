@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="480" viewBox="0 0 560 480" role="img" aria-label="Bolsa de café Tostadero Alba junto a una taza humeante">
+  <rect width="560" height="480" rx="28" fill="#EBD3B3"/>
+  <circle cx="290" cy="235" r="190" fill="#F4E4CC"/>
+  <!-- bolsa -->
+  <path d="M196 132h168l20 268a14 14 0 0 1-14 15H190a14 14 0 0 1-14-15z" fill="#3B2A20"/>
+  <rect x="190" y="112" width="180" height="30" rx="6" fill="#2B1E16"/>
+  <rect x="222" y="200" width="116" height="142" rx="10" fill="#FBF6EE"/>
+  <circle cx="280" cy="242" r="24" fill="#C8541E"/>
+  <ellipse cx="280" cy="242" rx="9" ry="14" transform="rotate(35 280 242)" fill="#FBF6EE"/>
+  <path d="M272 250c4-4 10-10 16-16" stroke="#C8541E" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <text x="280" y="296" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#3B2A20">ALBA</text>
+  <text x="280" y="316" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" letter-spacing="1.5" fill="#8A5A3B">CAFÉ DE ESPECIALIDAD</text>
+  <!-- taza -->
+  <ellipse cx="438" cy="424" rx="64" ry="11" fill="#D9C0A0"/>
+  <path d="M390 338h96v36a48 48 0 0 1-96 0z" fill="#FBF6EE"/>
+  <path d="M486 350h10a16 16 0 0 1 0 32h-14" stroke="#FBF6EE" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <ellipse cx="438" cy="338" rx="48" ry="9" fill="#6B4630"/>
+  <path d="M418 318c-8-14 8-22 0-36M440 316c-8-14 8-22 0-36M462 318c-8-14 8-22 0-36" stroke="#8A5A3B" stroke-opacity=".45" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- granos -->
+  <g fill="#5A3A26">
+    <ellipse cx="116" cy="408" rx="13" ry="8" transform="rotate(-25 116 408)"/>
+    <ellipse cx="146" cy="428" rx="13" ry="8" transform="rotate(20 146 428)"/>
+    <ellipse cx="96" cy="440" rx="13" ry="8" transform="rotate(50 96 440)"/>
+    <ellipse cx="170" cy="396" rx="13" ry="8" transform="rotate(-5 170 396)"/>
+  </g>
+  <g stroke="#EBD3B3" stroke-width="1.8" stroke-linecap="round" fill="none">
+    <path d="M106 410l20-4M136 430l20-4M88 436l16 8M160 396l20 0"/>
+  </g>
+</svg>
