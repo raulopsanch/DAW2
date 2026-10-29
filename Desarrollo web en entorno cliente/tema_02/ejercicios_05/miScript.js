@@ -515,7 +515,7 @@ de salida será “dd-mm-yyyy”. */
 function crearFecha(separador) {
   const fecha = new Date();
 
-  const dia = String(fecha.getDate().padStart(2, "0"));
+  const dia = String(fecha.getDate()).padStart(2, "0");
   const mes = String(fecha.getMonth() + 1).padStart(2, "0");
   const anho = fecha.getFullYear();
 
@@ -523,4 +523,31 @@ function crearFecha(separador) {
 }
 function ej30() {
   alert(crearFecha("-"));
+}
+
+/* Ejercicio 17. En una empresa las facturas vencen a los 20 días. Crear una función que tendrá como parámetro una fecha con el formato 'dd-mm-YYYY' y devolverá la fecha de vencimiento (con el mismo formato). Hay que tener en cuenta que, si la fecha de vencimiento cae en fin de semana, habrá que mostrar la fecha del viernes anterior. */
+function vencimiento(fecha) {
+  const partes = fecha.split("-");
+  const dia = partes[0];
+  const mes = partes[1];
+  const anio = partes[2];
+
+  const fechaEntrega = new Date(`${anio}-${mes}-${dia}`);
+  fechaEntrega.setDate(fechaEntrega.getDate() + 20);
+
+  const diaSemana = fechaEntrega.getDay();
+  if (diaSemana == 6) {
+    diasemana = fechaEntrega.setDate(fechaEntrega.getDate() - 1);
+  } else if (diaSemana == 0) {
+    diaSemana = fechaEntrega.setDate(fechaEntrega.getDate() - 2);
+  }
+
+  let diaFinal = String(fechaEntrega.getDate());
+  let mesFinal = String(fechaEntrega.getMonth() + 1);
+  let anioFinal = String(fechaEntrega.getFullYear());
+
+  return `${diaFinal}-${mesFinal}-${anioFinal}`;
+}
+function ej31() {
+  alert(vencimiento("12-10-2026"));
 }
