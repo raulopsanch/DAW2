@@ -12,14 +12,8 @@
 
 body {
   margin: 0;
-  font-family:
-    "Segoe UI",
-    system-ui,
-    -apple-system,
-    Roboto,
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue",
+    Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #3b2a20;
@@ -178,7 +172,7 @@ ul {
 
 /* PASO 1.6: carrito y botón en la misma línea */
 .carrito {
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: middle;
 }
 
@@ -187,7 +181,7 @@ ul {
 }
 
 .btn {
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: middle;
   margin-left: 22px;
   padding: 10px 20px;
@@ -195,7 +189,6 @@ ul {
 
 /* PASO 1.7: contador junto al icono */
 .contador {
-  display: inline-block;
   vertical-align: top;
   margin-left: 3px;
 }
