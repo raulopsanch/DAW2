@@ -528,26 +528,73 @@ function ej30() {
 /* Ejercicio 17. En una empresa las facturas vencen a los 20 días. Crear una función que tendrá como parámetro una fecha con el formato 'dd-mm-YYYY' y devolverá la fecha de vencimiento (con el mismo formato). Hay que tener en cuenta que, si la fecha de vencimiento cae en fin de semana, habrá que mostrar la fecha del viernes anterior. */
 function vencimiento(fecha) {
   const partes = fecha.split("-");
-  const dia = partes[0];
+  let [dia, mes, año] = partes;
+  /* const dia = partes[0];
   const mes = partes[1];
-  const anio = partes[2];
+  const año = partes[2]; */
 
-  const fechaEntrega = new Date(`${anio}-${mes}-${dia}`);
+  const fechaEntrega = new Date(`${año}-${mes}-${dia}`);
   fechaEntrega.setDate(fechaEntrega.getDate() + 20);
 
   const diaSemana = fechaEntrega.getDay();
   if (diaSemana == 6) {
-    diasemana = fechaEntrega.setDate(fechaEntrega.getDate() - 1);
+    fechaEntrega.setDate(fechaEntrega.getDate() - 1);
   } else if (diaSemana == 0) {
-    diaSemana = fechaEntrega.setDate(fechaEntrega.getDate() - 2);
+    fechaEntrega.setDate(fechaEntrega.getDate() - 2);
   }
 
-  let diaFinal = String(fechaEntrega.getDate());
-  let mesFinal = String(fechaEntrega.getMonth() + 1);
-  let anioFinal = String(fechaEntrega.getFullYear());
+  let diaFinal = String(fechaEntrega.getDate()).padStart(2, "0");
+  let mesFinal = String(fechaEntrega.getMonth() + 1).padStart(2, "0");
+  let añoFinal = String(fechaEntrega.getFullYear());
 
-  return `${diaFinal}-${mesFinal}-${anioFinal}`;
+  return `${diaFinal}-${mesFinal}-${añoFinal}`;
 }
 function ej31() {
-  alert(vencimiento("12-10-2026"));
+  alert(vencimiento("05-10-2026"));
+}
+
+/* Ejercicio 18. Hacer una función que reciba dos parámetros (mes y año). Con esos datos
+tiene que mostrar la siguiente información (por ejemplo, si le pasamos el mes de
+Octubre y el año 2020: 
+  Octubre 2020
+    Semana 1: 1(ju) 2(vi) 3(sa) 4(do)
+    Semana 2: 5(lu) 6(ma) 7(mi) 8(ju) 9(vi) 10(sa) 11(do)
+    Semana 3: 12(lu) 13(ma) 14(mi) 15(ju) 16(vi) 17(sa) 18(do)
+    Semana 4: 19(lu) 20(ma) 21(mi) 22(ju) 23(vi) 24(sa) 25(do)
+    Semana 5: 26(lu) 27(ma) 28(mi) 29(ju) 30(vi) 31(sa)
+    */
+function semanasMes(mes, año) {
+  const fecha = new Date(año, mes - 1, 1);
+  const semana = ["(Do)", "(Lu)", "(Ma)", "(Mi)", "(Ju)", "(Vi)", "(Sa)"];
+  const mesesAño = [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre",
+  ];
+  let rdo = "Semana 1: ";
+  let numSemana = 2;
+
+  while (fecha.getMonth() == mes - 1) {
+    let diaSemana = fecha.getDay();
+    rdo += `${fecha.getDate()} ${semana[diaSemana]} `;
+
+    if (diaSemana == 0) {
+      rdo += "\n";
+      rdo += `Semana ${numSemana++}: `;
+    }
+    fecha.setDate(fecha.getDate() + 1);
+  }
+  alert(rdo);
+}
+function ej32() {
+  semanasMes(10, 2020);
 }
