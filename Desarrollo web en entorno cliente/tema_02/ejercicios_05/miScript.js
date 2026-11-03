@@ -598,3 +598,17 @@ function semanasMes(mes, año) {
 function ej32() {
   semanasMes(10, 2020);
 }
+
+/* Ejercicio 19. Escribe una función diasHastaFecha(fechaObjetivo) que reciba una fecha
+en formato 'YYYY-MM-DD' y devuelva el número de días que faltan desde hoy hasta
+esa fecha (puedes usar getTime() y dividir la diferencia en milisegundos entre 1000 * 60 * 60 * 24). */
+function diasHastaFecha(fechaObjetivo) {
+  let hoy = new Date();
+  let objetivo = new Date(fechaObjetivo);
+  let diferenciaMilisegundo = objetivo.getTime() - hoy.getTime();
+  return Math.floor(diferenciaMilisegundo / (1000 * 60 * 60 * 24));
+}
+function ej33() {
+  const numDias = diasHastaFecha("2026-12-31");
+  alert(`Número de días hasta objetivo: ${numDias}`);
+}

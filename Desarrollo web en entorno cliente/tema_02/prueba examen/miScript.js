@@ -52,14 +52,16 @@ function codificar() {
   let codificadoFinal = resultadoCodificado.join("-");
 
   let fecha = new Date();
+  //let fechaFormateada = fecha.toLocaleDateString();
 
-  document.querySelector("#contenedor").innerHTML +=
-    `<p>Mensaje: ${mensaje}&nbsp;&nbsp;&nbsp;&nbsp;Codificado/Decodificado: ${codificadoFinal}&nbsp;&nbsp;&nbsp;&nbsp;Fecha: ${fecha.toLocaleString()}</p>`;
+  document.querySelector(
+    "#contenedor"
+  ).innerHTML += `<p>Mensaje: ${mensaje}&nbsp;&nbsp;&nbsp;&nbsp;Codificado/Decodificado: ${codificadoFinal}&nbsp;&nbsp;&nbsp;&nbsp;Fecha: ${fecha.toLocaleDateString()}</p>`;
 }
 
 function decodificar() {
   let mensajeCodificado = prompt(
-    "Introduce un mensaje codificado (números separados por guiones): ",
+    "Introduce un mensaje codificado (números separados por guiones): "
   );
   if (!mensajeCodificado) return;
 
@@ -78,6 +80,8 @@ function decodificar() {
   }
   let fecha = new Date();
 
-  document.querySelector("#contenedor").innerHTML +=
-    `<p>Mensaje: ${mensajeCodificado}&nbsp;&nbsp;&nbsp;&nbsp;Codificado/Decodificado: ${mensajeDecodificado}&nbsp;&nbsp;&nbsp;&nbsp;Fecha: ${fecha.toLocaleString()}</p>`;
+  document.querySelector(
+    "#contenedor"
+  ).innerHTML += `<p>Mensaje: ${mensajeCodificado}&nbsp;&nbsp;&nbsp;&nbsp;Codificado/Decodificado: ${mensajeDecodificado}&nbsp;&nbsp;&nbsp;&nbsp;Fecha: ${fecha.toLocaleString()}</p>`;
 }
+b;
