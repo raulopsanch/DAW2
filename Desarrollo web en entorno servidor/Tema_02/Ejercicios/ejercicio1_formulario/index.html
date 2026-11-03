@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="procesar.php" method="GET">
+      Nombre: <input type="text" name="nombre" /> <br />
+      Apellidos: <input type="text" name="apellidos" /> <br />
+      Edad: <input type="number" name="edad" /> <br />
+      soltero: <input type="radio" name="estado" value="soltero" />&nbsp;&nbsp;
+      casado:<input type="radio" name="estado" value="casado" /> <br />
+      Deporte/s favorito/s: <br />
+      Fútbol<input type="checkbox" name="deportes[]" value="futbol" />
+      &nbsp;&nbsp; baloncesto:<input
+        type="checkbox"
+        name="deportes[]"
+        value="baloncesto"
+      />
+      <br />
+      Tenis:<input
+        type="checkbox"
+        name="deportes[]"
+        value="tenis"
+      />&nbsp;&nbsp; Rugby:<input
+        type="checkbox"
+        name="deportes[]"
+        value="rugby"
+      />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
