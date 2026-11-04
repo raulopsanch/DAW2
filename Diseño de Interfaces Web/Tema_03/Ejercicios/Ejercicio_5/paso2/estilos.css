@@ -11,11 +11,12 @@
 
 body {
   margin: 0;
-  font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue",
+    Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #3B2A20;
-  background: #FBF6EE;
+  color: #3b2a20;
+  background: #fbf6ee;
 }
 
 a {
@@ -32,8 +33,8 @@ ul {
 /* Barra de anuncio */
 .anuncio {
   padding: 8px 16px;
-  background: #3B2A20;
-  color: #F6E9D6;
+  background: #3b2a20;
+  color: #f6e9d6;
   font-size: 0.875rem;
 }
 
@@ -43,8 +44,8 @@ ul {
 
 /* Cabecera */
 .cabecera {
-  background: #FFFFFF;
-  border-bottom: 1px solid #E7DCCB;
+  background: #ffffff;
+  border-bottom: 1px solid #e7dccb;
 }
 
 .logo-texto {
@@ -59,12 +60,12 @@ ul {
 }
 
 .menu a:hover {
-  color: #C8541E;
+  color: #c8541e;
 }
 
 .menu a.activo {
-  color: #C8541E;
-  border-bottom-color: #C8541E;
+  color: #c8541e;
+  border-bottom-color: #c8541e;
 }
 
 .contador {
@@ -72,8 +73,8 @@ ul {
   height: 18px;
   padding: 0 5px;
   border-radius: 9px;
-  background: #C8541E;
-  color: #FFFFFF;
+  background: #c8541e;
+  color: #ffffff;
   font-size: 0.72rem;
   font-weight: 700;
   line-height: 18px;
@@ -82,14 +83,14 @@ ul {
 
 .btn {
   border-radius: 999px;
-  background: #3B2A20;
-  color: #FFFFFF;
+  background: #3b2a20;
+  color: #ffffff;
   font-size: 0.9rem;
   font-weight: 600;
 }
 
 .btn:hover {
-  background: #C8541E;
+  background: #c8541e;
 }
 
 /* Bloque de relleno (marca el sitio del contenido futuro) */
@@ -97,9 +98,9 @@ ul {
   min-height: 240px;
   margin: 24px;
   padding: 24px;
-  border: 2px dashed #D9C9B0;
+  border: 2px dashed #d9c9b0;
   border-radius: 12px;
-  color: #8A5A3B;
+  color: #8a5a3b;
 }
 
 /* =========================================================
@@ -202,14 +203,14 @@ ul {
    ========================================================= */
 
 .portada {
-  background: #F4E9D8;
+  background: #f4e9d8;
 }
 
 .etiqueta {
-  border: 1px solid #E7DCCB;
+  border: 1px solid #e7dccb;
   border-radius: 999px;
-  background: #FFFFFF;
-  color: #C8541E;
+  background: #ffffff;
+  color: #c8541e;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -228,7 +229,7 @@ ul {
 .intro {
   margin: 0 0 28px;
   font-size: 1.125rem;
-  color: #6B5446;
+  color: #6b5446;
 }
 
 .botones {
@@ -241,25 +242,25 @@ ul {
 }
 
 .boton-primario {
-  border: 2px solid #C8541E;
-  background: #C8541E;
-  color: #FFFFFF;
+  border: 2px solid #c8541e;
+  background: #c8541e;
+  color: #ffffff;
 }
 
 .boton-primario:hover {
-  border-color: #A8420F;
-  background: #A8420F;
+  border-color: #a8420f;
+  background: #a8420f;
 }
 
 .boton-borde {
-  border: 2px solid #3B2A20;
+  border: 2px solid #3b2a20;
   background: transparent;
-  color: #3B2A20;
+  color: #3b2a20;
 }
 
 .boton-borde:hover {
-  background: #3B2A20;
-  color: #FFFFFF;
+  background: #3b2a20;
+  color: #ffffff;
 }
 
 .garantias {
@@ -280,53 +281,61 @@ ul {
 
 /* PASO 2.1: portada (relleno de 64px arriba y abajo) */
 .portada {
-
+  padding: 64px 0;
 }
 
 /* PASO 2.2: dos columnas en la misma línea
    (recuerda la trampa del espacio en blanco en el HTML) */
 .portada-texto,
 .portada-imagen {
-
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .portada-texto {
-
+  width: 52%;
 }
 
 .portada-imagen {
-
+  width: 48%;
 }
 
 /* PASO 2.3: etiqueta que ocupa solo lo que mide su texto */
 .etiqueta {
-
+  display: inline-block;
+  padding: 5px 14px;
 }
 
 /* PASO 2.4: ancho máximo del párrafo de introducción */
 .intro {
-
+  max-width: 460px;
 }
 
 /* PASO 2.5: botones en la misma línea */
 .boton {
-
+  display: inline-block;
+  padding: 14px 28px;
+  margin-right: 12px;
 }
 
 /* PASO 2.6: garantías en una fila, con icono y texto alineados */
 .garantias li {
-
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .garantias img {
-
+  vertical-align: center;
+  margin-right: 8px;
 }
 
 .garantias span {
-
+  vertical-align: center;
 }
 
 /* PASO 2.7: imagen de la portada dentro de su columna */
 .portada-imagen img {
-
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
 }
