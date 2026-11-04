@@ -1,0 +1,18 @@
+.fila {
+  margin-bottom: 12px;
+}
+
+.fila .icono {
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  background-color: #4b3563;
+  vertical-align: middle;
+  border-radius: 6px;
+}
+
+.fila .texto {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  margin-left: 8px;
+}
