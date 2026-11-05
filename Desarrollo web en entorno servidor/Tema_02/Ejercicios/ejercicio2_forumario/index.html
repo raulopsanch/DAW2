@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <h2>Calculadora</h2>
+      <form action="calculadora.php" method="get">
+        <label>Numero</label><br />
+        <input type="number" name="numero" class="number" /><br />
+        <label>Operacion</label><br />
+        <select class="input" name="operacion" id="operacion">
+          <option value="doblar">doblar</option>
+          <option value="cuadrado">cuadrado</option>
+          <option value="cubo">cubo</option>
+          <option value="raiz">raíz</option>
+        </select>
+        <br />
+        <button onclick="">CALCULAR</button>
+      </form>
+    </div>
+  </body>
+</html>
