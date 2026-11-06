@@ -6,6 +6,7 @@ if($color == "black"){
     $color_letra = "black";
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
