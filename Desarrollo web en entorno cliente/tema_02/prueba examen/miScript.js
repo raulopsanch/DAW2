@@ -29,6 +29,19 @@ let letras = [
   " ",
 ];
 
+function verFecha() {
+  let fecha = new Date();
+
+  let dia = fecha.getDate();
+  let mes = fecha.getMonth();
+  let año = fecha.getFullYear();
+  let hora = fecha.getHours();
+  let minuto = fecha.getMinutes();
+  let segundos = fecha.getSeconds();
+
+  return `${dia} - ${mes} - ${año} --- ${hora}:${minuto}:${segundos}`;
+}
+
 function codificar() {
   let mensaje = prompt("Introduce un mensaje para codificar (solo letras): ");
 
@@ -51,17 +64,13 @@ function codificar() {
 
   let codificadoFinal = resultadoCodificado.join("-");
 
-  let fecha = new Date();
-  //let fechaFormateada = fecha.toLocaleDateString();
-
-  document.querySelector(
-    "#contenedor"
-  ).innerHTML += `<p>Mensaje: ${mensaje}&nbsp;&nbsp;&nbsp;&nbsp;Codificado/Decodificado: ${codificadoFinal}&nbsp;&nbsp;&nbsp;&nbsp;Fecha: ${fecha.toLocaleDateString()}</p>`;
+  document.querySelector("#contenedor").innerHTML +=
+    `<p>Mensaje: ${mensaje}&nbsp;&nbsp;&nbsp;&nbsp;Codificado/Decodificado: ${codificadoFinal}&nbsp;&nbsp;&nbsp;&nbsp;Fecha: ${verFecha()}</p>`;
 }
 
 function decodificar() {
   let mensajeCodificado = prompt(
-    "Introduce un mensaje codificado (números separados por guiones): "
+    "Introduce un mensaje codificado (números separados por guiones): ",
   );
   if (!mensajeCodificado) return;
 
@@ -78,10 +87,8 @@ function decodificar() {
     }
     mensajeDecodificado += letras[indice];
   }
-  let fecha = new Date();
 
-  document.querySelector(
-    "#contenedor"
-  ).innerHTML += `<p>Mensaje: ${mensajeCodificado}&nbsp;&nbsp;&nbsp;&nbsp;Codificado/Decodificado: ${mensajeDecodificado}&nbsp;&nbsp;&nbsp;&nbsp;Fecha: ${fecha.toLocaleString()}</p>`;
+  document.querySelector("#contenedor").innerHTML +=
+    `<p>Mensaje: ${mensajeCodificado}&nbsp;&nbsp;&nbsp;&nbsp;Codificado/Decodificado: ${mensajeDecodificado}&nbsp;&nbsp;&nbsp;&nbsp;Fecha: ${verFecha()}</p>`;
 }
 b;
