@@ -122,31 +122,22 @@ function ejercicio4() {
   let fechasCorregidas = [];
 
   for (let fechaStr of posiblesFechasDiluvio) {
-    // 1. Descomponemos el string "DD/MM/YYYY" usando split('/')
     let partes = fechaStr.split("/");
-    // Ojo: en JavaScript los meses van de 0 a 11, por eso restamos 1 a los meses (partes[1] - 1)
     let fechaOriginal = new Date(partes[2], partes[1] - 1, partes[0]);
 
-    // 2. Creamos la nueva fecha sumando los 146 días
     let nuevaFecha = new Date(fechaOriginal);
     nuevaFecha.setDate(nuevaFecha.getDate() + diasDemora);
 
-    // 3. Comprobamos si cae en domingo (getDay() === 0)
     if (nuevaFecha.getDay() === 0) {
-      // Si es domingo, sumamos 1 día para pasar al lunes
       nuevaFecha.setDate(nuevaFecha.getDate() + 1);
 
-      // Añadimos el aviso correspondiente al HTML
       mensaje += `<p>La fecha ${fechaOriginal.toLocaleDateString()} de diluvio cae en domingo. Se ha ajustado al lunes siguiente</p>`;
     }
 
-    // 4. Guardamos la fecha final (ajustada o normal) formateada para el alert
     fechasCorregidas.push(nuevaFecha.toLocaleDateString());
   }
 
-  // Volcamos los avisos en el div correspondiente del HTML
   document.querySelector("#rdo").innerHTML = mensaje;
 
-  // Mostramos el alert con todas las fechas, cada una en una línea
   alert(fechasCorregidas.join("\n"));
 }
