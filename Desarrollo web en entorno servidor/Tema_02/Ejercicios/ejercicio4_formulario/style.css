@@ -1,0 +1,12 @@
+.contenedor {
+  width: 50%;
+  border: solid 2px black;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: yellow;
+}
+
+.contenedor button {
+  display: block;
+  padding-bottom: 2px;
+}
