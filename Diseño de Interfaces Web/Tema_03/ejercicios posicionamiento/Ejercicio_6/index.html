@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      .pagina {
+        height: 280px;
+        padding: 20px;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .pagina span {
+        position: relative;
+        display: block;
+        width: 280px;
+        background-color: white;
+        left: 50%;
+        padding: 10px;
+      }
+
+      span .cerrar {
+        position: absolute;
+        right: 10px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagina">
+      <p>Contenido de la página que queda detrás de la ventana modal.</p>
+      <span>
+        <button class="cerrar">x</button>
+        <h3>¿Guardar los cambios?</h3>
+        <p>Si sales ahora, perderás lo que no hayas guardado.</p>
+      </span>
+    </div>
+  </body>
+</html>
