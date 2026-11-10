@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>radio-button</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <h2>Uso de radio</h2>
+      <form action="radio.php" method="get">
+        <table>
+          <tr>
+            <td>Nombre</td>
+            <td><input type="text" name="nombre" /></td>
+          </tr>
+          <tr>
+            <td>Estudios</td>
+            <td>
+              <label
+                ><input
+                  type="radio"
+                  name="estudio"
+                  value="No tiene
+                estudios"
+                  checked
+                />No tiene estudios</label
+              ><br />
+              <label
+                ><input
+                  type="radio"
+                  name="estudio"
+                  value="Estudios primario"
+                />Estudios primario</label
+              ><br />
+              <label
+                ><input
+                  type="radio"
+                  name="estudio"
+                  value="Estudios
+                secundarios"
+                />Estudios secundarios</label
+              >
+            </td>
+          </tr>
+        </table>
+        <div class="contenido">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1>USO DE CHECKBOX</h1>
+      <form action="check.php" method="get">
+        <table>
+          <tr>
+            <td>Nombre</td>
+            <td><input type="text" name="nombre" /></td>
+          </tr>
+          <tr>
+            <td>Deportes</td>
+            <td>
+              <label
+                ><input
+                  type="checkbox"
+                  name="deporte[]"
+                  value="futbol"
+                />Fútbol</label
+              ><br />
+              <label
+                ><input
+                  type="checkbox"
+                  name="deporte[]"
+                  value="basket"
+                />Basket</label
+              ><br />
+              <label
+                ><input
+                  type="checkbox"
+                  name="deporte[]"
+                  value="tenis"
+                />Tenis</label
+              ><br />
+              <label
+                ><input
+                  type="checkbox"
+                  name="deporte[]"
+                  value="voley"
+                />Voley</label
+              >
+            </td>
+          </tr>
+        </table>
+        <br />
+        <button type="submit" value="Enviar" class="btn">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>

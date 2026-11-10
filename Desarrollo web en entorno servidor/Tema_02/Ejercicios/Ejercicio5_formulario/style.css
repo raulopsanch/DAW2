@@ -1,0 +1,35 @@
+.contenedor {
+  width: 380px;
+  border: 2px solid;
+  background-color: yellow;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.contenedor h1 {
+  text-align: center;
+  color: blue;
+  font-weight: bold;
+}
+
+table {
+  border: 1px solid;
+}
+
+td {
+  border: 1px solid #777;
+  padding: 8px;
+}
+
+.btn {
+  display: block;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+  color: blue;
+  font-weight: bold;
+}
