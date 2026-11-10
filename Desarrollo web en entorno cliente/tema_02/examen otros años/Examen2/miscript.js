@@ -28,14 +28,12 @@ let posiblesFechasDiluvio = [
 ];
 
 function filtrarPorTipo(tipo) {
-  return animalesEnArca.filter(
-    (animal) => animal.tipo.toLowerCase() === tipo.toLowerCase(),
-  );
+  return animalesEnArca.filter((animal) => animal.tipo === tipo);
 }
 
 function ejercicio1() {
   let tipo = prompt(
-    "Ingrese el tipo de animal a filtrar (carnívoro(C), herbívoro(H), acuático(A)): ",
+    "Ingrese el tipo de animal a filtrar (carnívoro(C), herbívoro(H), acuático(A)): "
   ).toLowerCase();
 
   if (!tipo) {
@@ -113,6 +111,7 @@ function ejercicio3() {
   mensaje += `<p> <strong>Tipo:</strong> ${animal.tipo}</p > `;
   mensaje += `<p> <strong>Sexo:</strong> ${animal.sexo}</p > `;
   mensaje += `<p> <em>Curiosidad:</em> ${curiosidadAleatoria}</p > `;
+
   document.querySelector("#rdo").innerHTML = mensaje;
 }
 

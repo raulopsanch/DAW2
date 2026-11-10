@@ -38,11 +38,12 @@ function ejercicio2() {
   for (let i = 0; i < deudas.length; i++) {
     let partes = deudas[i].split(":");
     let nombre = partes[0];
-    let fechaPartes = partes[1].split("/");
+    let [dia, mes, anho] = partes[1].split("/");
+    /* let fechaPartes = partes[1].split("/");
 
     let dia = parseInt(fechaPartes[0]);
     let mes = parseInt(fechaPartes[1] - 1);
-    let anho = parseInt(fechaPartes[2]);
+    let anho = parseInt(fechaPartes[2]); */
 
     let fecha = new Date(anho, mes, dia);
 
