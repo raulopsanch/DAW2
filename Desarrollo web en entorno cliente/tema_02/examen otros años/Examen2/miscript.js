@@ -124,16 +124,15 @@ function ejercicio4() {
     let partes = fechaStr.split("/");
     let fechaOriginal = new Date(partes[2], partes[1] - 1, partes[0]);
 
-    let nuevaFecha = new Date(fechaOriginal);
-    nuevaFecha.setDate(nuevaFecha.getDate() + diasDemora);
+    fechaOriginal.setDate(fechaOriginal.getDate() + diasDemora);
 
-    if (nuevaFecha.getDay() === 0) {
-      nuevaFecha.setDate(nuevaFecha.getDate() + 1);
+    if (fechaOriginal.getDay() === 0) {
+      fechaOriginal.setDate(fechaOriginal.getDate() + 1);
 
       mensaje += `<p>La fecha ${fechaOriginal.toLocaleDateString()} de diluvio cae en domingo. Se ha ajustado al lunes siguiente</p>`;
     }
 
-    fechasCorregidas.push(nuevaFecha.toLocaleDateString());
+    fechasCorregidas.push(fechaOriginal.toLocaleDateString());
   }
 
   document.querySelector("#rdo").innerHTML = mensaje;
