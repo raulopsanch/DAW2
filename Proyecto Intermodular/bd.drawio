@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="K7K6K4PQ6_dpIgu2LlZp">
-    <mxGraphModel dx="2241" dy="1958" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1693" dy="1637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,7 +10,7 @@
         <mxCell id="r_cdwm7Llz0dt7sMmGlF-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4F81BD;strokeWidth=4;fontSize=22;fontColor=#000000;align=center;verticalAlign=middle;points=[[0,0,0],[0.125,0,0],[0.25,0,0],[0.375,0,0],[0.5,0,0],[0.625,0,0],[0.75,0,0],[0.875,0,0],[1,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[1,1,0],[0.875,1,0],[0.75,1,0],[0.625,1,0],[0.5,1,0],[0.375,1,0],[0.25,1,0],[0.125,1,0],[0,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];snapToPoint=1;" value="Eventos" vertex="1">
           <mxGeometry height="65" width="180" x="400" y="-65" as="geometry" />
         </mxCell>
-        <mxCell id="r_cdwm7Llz0dt7sMmGlF-4" parent="1" style="shape=image;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20160%2090%22%3E%3Cpath%20d%3D%22M80%200%20L160%2045%20L80%2090%20L0%2045%20Z%22%20fill%3D%22%233E7CC2%22%2F%3E%3Cpath%20d%3D%22M80%203%20L157%2045%20L80%2087%20L3%2045%20Z%22%20fill%3D%22none%22%20stroke%3D%22%234F81BD%22%20stroke-width%3D%227%22%2F%3E%3Cpath%20d%3D%22M80%205%20L80%2085%22%20fill%3D%22none%22%20stroke%3D%22%234F81BD%22%20stroke-width%3D%227%22%2F%3E%3C%2Fsvg%3E;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;points=[[0.5,0,0],[0.625,0.125,0],[0.75,0.25,0],[0.875,0.375,0],[1,0.5,0],[0.875,0.625,0],[0.75,0.75,0],[0.625,0.875,0],[0.5,1,0],[0.375,0.875,0],[0.25,0.75,0],[0.125,0.625,0],[0,0.5,0],[0.125,0.375,0],[0.25,0.25,0],[0.375,0.125,0]];snapToPoint=1;" value="participa/&lt;br&gt;solicita" vertex="1">
+        <mxCell id="r_cdwm7Llz0dt7sMmGlF-4" parent="1" style="shape=image;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20160%2090%22%3E%3Cpath%20d%3D%22M80%200%20L160%2045%20L80%2090%20L0%2045%20Z%22%20fill%3D%22%233E7CC2%22%2F%3E%3Cpath%20d%3D%22M80%203%20L157%2045%20L80%2087%20L3%2045%20Z%22%20fill%3D%22none%22%20stroke%3D%22%234F81BD%22%20stroke-width%3D%227%22%2F%3E%3Cpath%20d%3D%22M80%205%20L80%2085%22%20fill%3D%22none%22%20stroke%3D%22%234F81BD%22%20stroke-width%3D%227%22%2F%3E%3C%2Fsvg%3E;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;points=[[0.5,0,0],[0.625,0.125,0],[0.75,0.25,0],[0.875,0.375,0],[1,0.5,0],[0.875,0.625,0],[0.75,0.75,0],[0.625,0.875,0],[0.5,1,0],[0.375,0.875,0],[0.25,0.75,0],[0.125,0.625,0],[0,0.5,0],[0.125,0.375,0],[0.25,0.25,0],[0.375,0.125,0]];snapToPoint=1;" value="REALIZA" vertex="1">
           <mxGeometry height="62" width="120" x="120" y="170" as="geometry" />
         </mxCell>
         <mxCell id="r_cdwm7Llz0dt7sMmGlF-5" edge="1" parent="1" source="r_cdwm7Llz0dt7sMmGlF-2" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#4F81BD;strokeWidth=4;defaultLabelBackgroundColor=page;exitX=1.006;exitY=0.631;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="r_cdwm7Llz0dt7sMmGlF-4" value="">
@@ -73,15 +73,6 @@
             <mxPoint x="-280" y="225" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8q0e3gqIJvmLpBUAWS7Y-20" edge="1" parent="1" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1;defaultLabelBackgroundColor=page;" value="">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-200" y="300" as="sourcePoint" />
-            <mxPoint x="-200" y="225" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="8q0e3gqIJvmLpBUAWS7Y-21" parent="1" style="text;html=1;strokeColor=none;fillColor=none;whiteSpace=wrap;fontSize=17;fontColor=#000000;align=center;verticalAlign=middle;" value="rol" vertex="1">
-          <mxGeometry height="45" width="40" x="-220" y="290" as="geometry" />
-        </mxCell>
         <mxCell id="8q0e3gqIJvmLpBUAWS7Y-22" edge="1" parent="1" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#000000;strokeWidth=1;defaultLabelBackgroundColor=page;" value="">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-90" y="290" as="sourcePoint" />
@@ -94,7 +85,7 @@
         <mxCell id="8q0e3gqIJvmLpBUAWS7Y-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4F81BD;strokeWidth=4;fontSize=22;fontColor=#000000;align=center;verticalAlign=middle;points=[[0,0,0],[0.125,0,0],[0.25,0,0],[0.375,0,0],[0.5,0,0],[0.625,0,0],[0.75,0,0],[0.875,0,0],[1,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[1,1,0],[0.875,1,0],[0.75,1,0],[0.625,1,0],[0.5,1,0],[0.375,1,0],[0.25,1,0],[0.125,1,0],[0,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];snapToPoint=1;" value="organizador" vertex="1">
           <mxGeometry height="65" width="180" x="-280" y="-240" as="geometry" />
         </mxCell>
-        <mxCell id="8q0e3gqIJvmLpBUAWS7Y-26" parent="1" style="shape=image;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20160%2090%22%3E%3Cpath%20d%3D%22M80%200%20L160%2045%20L80%2090%20L0%2045%20Z%22%20fill%3D%22%233E7CC2%22%2F%3E%3Cpath%20d%3D%22M80%203%20L157%2045%20L80%2087%20L3%2045%20Z%22%20fill%3D%22none%22%20stroke%3D%22%234F81BD%22%20stroke-width%3D%227%22%2F%3E%3Cpath%20d%3D%22M80%205%20L80%2085%22%20fill%3D%22none%22%20stroke%3D%22%234F81BD%22%20stroke-width%3D%227%22%2F%3E%3C%2Fsvg%3E;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;points=[[0.5,0,0],[0.625,0.125,0],[0.75,0.25,0],[0.875,0.375,0],[1,0.5,0],[0.875,0.625,0],[0.75,0.75,0],[0.625,0.875,0],[0.5,1,0],[0.375,0.875,0],[0.25,0.75,0],[0.125,0.625,0],[0,0.5,0],[0.125,0.375,0],[0.25,0.25,0],[0.375,0.125,0]];snapToPoint=1;" value="Organiza" vertex="1">
+        <mxCell id="8q0e3gqIJvmLpBUAWS7Y-26" parent="1" style="shape=image;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20160%2090%22%3E%3Cpath%20d%3D%22M80%200%20L160%2045%20L80%2090%20L0%2045%20Z%22%20fill%3D%22%233E7CC2%22%2F%3E%3Cpath%20d%3D%22M80%203%20L157%2045%20L80%2087%20L3%2045%20Z%22%20fill%3D%22none%22%20stroke%3D%22%234F81BD%22%20stroke-width%3D%227%22%2F%3E%3Cpath%20d%3D%22M80%205%20L80%2085%22%20fill%3D%22none%22%20stroke%3D%22%234F81BD%22%20stroke-width%3D%227%22%2F%3E%3C%2Fsvg%3E;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;points=[[0.5,0,0],[0.625,0.125,0],[0.75,0.25,0],[0.875,0.375,0],[1,0.5,0],[0.875,0.625,0],[0.75,0.75,0],[0.625,0.875,0],[0.5,1,0],[0.375,0.875,0],[0.25,0.75,0],[0.125,0.625,0],[0,0.5,0],[0.125,0.375,0],[0.25,0.25,0],[0.375,0.125,0]];snapToPoint=1;" value="ORGANIZA" vertex="1">
           <mxGeometry height="62" width="120" x="100" y="-230" as="geometry" />
         </mxCell>
         <mxCell id="8q0e3gqIJvmLpBUAWS7Y-27" edge="1" parent="1" style="edgeStyle=none;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#4F81BD;strokeWidth=4;defaultLabelBackgroundColor=page;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" target="r_cdwm7Llz0dt7sMmGlF-3" value="">
