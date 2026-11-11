@@ -33,7 +33,7 @@ function filtrarPorTipo(tipo) {
 
 function ejercicio1() {
   let tipo = prompt(
-    "Ingrese el tipo de animal a filtrar (carnívoro(C), herbívoro(H), acuático(A)): "
+    "Ingrese el tipo de animal a filtrar (carnívoro(C), herbívoro(H), acuático(A)): ",
   ).toLowerCase();
 
   if (!tipo) {
@@ -74,7 +74,26 @@ function ejercicio2() {
   let tipoInput = prompt("Introduce el tipo del animal: ");
   let sexoInput = prompt("Introduce el sexo del animal: ");
 
-  let existe = false;
+  let animalEncontrado = animalesEnArca.find(
+    (animal) =>
+      animal.nombre.toLowerCase() === nombreInput.trim().toLowerCase() &&
+      animal.sexo === sexoInput.trim().toLowerCase(),
+  );
+
+  if (animalEncontrado) {
+    alert("Ya existe un animal con ese nombre y ese sexo");
+  } else {
+    let nuevoAnimal = {
+      nombre: nombreInput.trim(),
+      tipo: tipoInput.trim(),
+      sexo: sexoInput.trim(),
+    };
+
+    animalesEnArca.push(nuevoAnimal);
+    alert("¡Animal añadido con éxito al arca!");
+  }
+
+  /* let existe = false;
 
   for (animal of animalesEnArca) {
     if (
@@ -96,7 +115,7 @@ function ejercicio2() {
 
     animalesEnArca.push(nuevoAnimal);
     alert("¡Animal añadido con éxito al arca!");
-  }
+  } */
 }
 
 function ejercicio3() {
