@@ -5,8 +5,8 @@
     $apellidos = ["López", "Pizarro", "Rosas", "García", "Núñez", "Pinto", "Gutierrez", "Durán", "Aguza", "Martínez"];
     $resultado = [];
 
-    for ($i = 0; $i < count($nombres); $i++) {
-        $resultado[$nombres[$i]] = $apellidos[$i];
+    for ($i = 0; $i < 10; $i++) {
+        $resultado[array_rand($nombres)] = array_rand($apellidos);
     }
 
     foreach($resultado as $nombre => $apellido) {
