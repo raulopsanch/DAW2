@@ -6,7 +6,7 @@
     $resultado = [];
 
     for ($i = 0; $i < 10; $i++) {
-        $resultado[array_rand($nombres)] = array_rand($apellidos);
+        $resultado[$i] = $nombres[array_rand($nombres)] . " " . $apellidos[array_rand($apellidos)];
     }
 
     foreach($resultado as $nombre => $apellido) {
