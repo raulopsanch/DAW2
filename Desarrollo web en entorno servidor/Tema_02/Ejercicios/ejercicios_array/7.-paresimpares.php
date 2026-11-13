@@ -18,8 +18,9 @@
                     array_push($array, $nums);
                 }
             }
-
+            echo "<pre>";
             print_r($array);
+            echo "</pre>"
         ?>
     </body>
 </html>
