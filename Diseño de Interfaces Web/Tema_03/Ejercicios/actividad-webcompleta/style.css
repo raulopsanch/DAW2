@@ -1,0 +1,74 @@
+:root {
+    --brand: #4F46E5; 
+    --brand-dark: #4338CA;
+    --brand-soft: #EEF2FF;
+    --accent: #F59E0B;
+    --ink: #111827;
+    --ink-soft: #6B7280;
+    --bg: #FFFFFF;
+    --bg-alt: #F9FAFB; 
+    --line: #E5E7EB;
+}
+
+header {
+    background-color: var(--bg);
+    border-bottom: 1px var(--line);
+}
+
+.logo {
+    color: var(--brand);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--brand-dark);
+
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--brand);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--brand-dark);
+    transform: translateY(-2px);
+    transition: all 0.2s;
+}
+
+.btn-secondary {
+    border: 1.5px solid var(--brand);
+    background-color: transparent;
+    
+}
+
+#hero {
+    background-color: linear-gradient(var(--brand-soft), var(--bg));
+    text-align: center;
+}
+
+#hero h1 {
+    max-width: 2000px;
+    text-align: center;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 0.375rem;
+    border: 1px solid var(--line);
+    box-shadow: #F59E0B;
+
+}
