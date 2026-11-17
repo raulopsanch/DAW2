@@ -20,6 +20,8 @@
             foreach ($tienda as $t) {
                 $sum += $t['precio'] * $t['stock'];
             }
+
+            echo "<p>Tiene un precio total de: " . $sum . "</p>";
         ?>
     </body>
 </html>
