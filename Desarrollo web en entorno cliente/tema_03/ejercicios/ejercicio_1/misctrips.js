@@ -9,5 +9,16 @@ function ejercicio1() {
     elementosLi.forEach(function (elemento, indice) {
         rdo += `${indice + 1}. ${elemento.textContent}\n`;
     })
-   alert(rdo);
+    alert(rdo);
+
+    alert(`\nPrimer elemento: ${elementosLi[0].textContent}`);
+    alert(`\núltimo elemento: ${elementosLi[elementosLi.length -1 ].textContent}`);
+
+    rdo = "";
+    const urgentes = document.querySelectorAll(".urgente li");
+    urgentes.forEach(urgente => {
+        rdo += `URGENTE: ${urgente.textContent}`;
+    })
+    alert(rdo);
+
 }
