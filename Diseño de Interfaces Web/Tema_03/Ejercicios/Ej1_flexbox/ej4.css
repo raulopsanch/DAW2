@@ -1,0 +1,20 @@
+header {
+    padding: 50px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.enlaces {
+    height: 50px;
+    background-color: black;
+}
+
+nav {
+    background-color: #333;
+    padding: 14px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}

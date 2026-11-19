@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            .contenedor {
+                display: flex;
+                border: 2px solid #333;
+                margin-bottom: 16px;
+            }
+
+            .caja {
+                background: #cfe0f5;
+                text-align: center;
+                padding: 10px;
+                margin: 2px;
+            }
+
+            .a {
+                flex-basis: 200px;
+                flex-shrink: 3;
+                order: 2
+            }
+
+            .b {
+                flex-basis: 200px;
+                flex-grow: 2;
+                flex-shrink: 1;
+                order: 1;
+            }
+
+            .c {
+                flex-basis: 200px;
+                flex-grow: 1;
+                flex-shrink: 5;
+                order: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="caja a">A</div>
+            <div class="caja b">B</div>
+            <div class="caja c">C</div>
+        </div>
+    </body>
+</html>
