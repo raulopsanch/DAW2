@@ -14,18 +14,17 @@
             ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'] */
             
             $nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-            $letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l'];
+            $letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+            $combinado = [];
 
-            $long1 = count($nums);
-            $long2 = count($letras);
-
-            $max = 0;
-
-            if ($long1 > $long2) {
-                $max = $long1;
-            } else {
-                $max = $long2;
+            for ($i = 0; $i < 10; $i++) {
+                $combinado[]= $nums[$i];
+                $combinado[] = $letras[$i];
             }
+
+            echo "<pre>";
+            print_r($combinado);
+            echo "</pre>";
         ?>
         
     </body>
