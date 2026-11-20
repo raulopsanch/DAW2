@@ -1,20 +1,90 @@
-header {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5ebd6; /* Fondo beige exterior */
+}
+
+.cabecera {
     padding: 50px;
     background-color: aquamarine;
     text-align: center;
 }
 
-.enlaces {
-    height: 50px;
-    background-color: black;
-}
-
-nav {
+.menu {
     background-color: #333;
     padding: 14px 20px;
+    display: flex;
+    gap: 35px;
 }
 
-nav a {
+.menu a {
     color: white;
     text-decoration: none;
+}
+
+.contenido-principal {
+    display: flex;
+}
+
+.aside {
+    width: 20%;
+    background-color: beige;
+    padding: 25px 20px;
+}
+
+.aside h2, .section h2 {
+    font-size: 20px;
+    margin-bottom: 14px;
+    color: #000;
+}
+
+.aside p, .section p {
+    font-size: 13px;
+    line-height: 1.45;
+    color: #111;
+}
+
+.section {
+    width: 80%;
+    background-color: khaki;
+    padding: 25px 20px;
+}
+
+.pie {
+    background-color: palevioletred;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .contenido-principal {
+        flex-direction: column;
+    }
+
+    .aside, .section {
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cabecera {
+        height: auto;
+        padding: 35px 15px;
+        text-align: center;
+    }
 }
