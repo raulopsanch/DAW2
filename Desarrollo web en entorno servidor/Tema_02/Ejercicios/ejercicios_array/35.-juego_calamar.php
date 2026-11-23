@@ -7,30 +7,35 @@
 </head>
 <body>
     <?php
-        $num = rand(1, 100);
-        $personas = [
-            "nombre" =>"Raúl", "mumero" => $num,
-            "nombre" => "Cristi", "numero" => $num,
-            "Javi" => $num,
-            "David" => $num,
-            "Laura" => $num,
-            "Rebeca" => $num,
-            "Marta" => $num,
-            "jesús" => $num,
-            "Samuel" => $num,
-            "Yoli" => $num,
-        ];
+        $nombres = [ "Raúl","Cristi", "Javi", "David", "Laura", "Rebeca", "Marta", "jesús", "Samuel", "Yoli" ];
 
-        foreach($personas as $nom => $valor) {
-            $num = rand(1, 100);
-            $valor['numero'] = $num;
+        $jugadores = [];
+
+        foreach ($nombres as $nombre) {
+            do {
+                $numero = rand(1, 100);
+            } while (in_array($numero, $jugadores, true));
+            $jugadores[$nombre] = $numero;
         }
-        
 
-        echo "<pre>";
-        print_r($personas);
-        echo "</pre>";
+        echo "<h2>Números asignados:</h2>";
+        foreach($jugadores as $jugador => $numero) {
+            echo "$jugador: $numero<br/>";
+        }
 
+        echo "<hr/>";
+
+        $bombo = range(1, 100);
+        shuffle($bombo);
+        $numerosExtraidos = [];
+        $ronda = 1;
+
+        while(count($jugadores) > 1 && !empty($bombo))
+
+        $ganadorNombre = array_key_first($jugadores);
+        $ganadorNumero = $jugadores[$ganadorNombre];
+
+        echo "El jugador ganador es <strong>$ganadorNombre</strong>";
     ?>
 </body>
 </html>
