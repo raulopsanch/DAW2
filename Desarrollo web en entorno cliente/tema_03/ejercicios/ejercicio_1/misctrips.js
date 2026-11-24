@@ -13,8 +13,7 @@ function ejercicio1() {
     })
     alert(rdo);
 
-    /* 2. Muestra el primer y el último elemento usando índices. Para el último no escribas el 
-    número a mano: calcúlalo con length. */
+    /* 2. Muestra el primer y el último elemento usando índices. Para el último no escribas el número a mano: calcúlalo con length. */
     alert(`\nPrimer elemento: ${elementosLi[0].textContent}`);
     alert(`\núltimo elemento: ${elementosLi[elementosLi.length -1 ].textContent}`);
 

@@ -100,7 +100,7 @@ button {
 .col-evento img {
     width: 100%;
     height: 320px;
-    object-fit: cover; /* Evita que las fotos se deformen si tienen distinto tamaño */
+    object-fit: cover; 
     border-radius: 4px;
 }
 
@@ -133,7 +133,7 @@ button {
 }
 
 .texto-contenido {
-    max-width: 700px; /* Limita el ancho del bloque para que el párrafo parta en dos líneas */
+    max-width: 700px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,7 +141,7 @@ button {
 
 .texto-contenido h2 {
     font-size: 2.5rem;
-    text-transform: uppercase; /* "EXPLORA EL MUNDO" en mayúsculas */
+    text-transform: uppercase; 
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
@@ -150,7 +150,7 @@ button {
     font-size: 0.95rem;
     line-height: 1.5;
     margin-bottom: 25px;
-    max-width: 560px; /* Acota un poco más el párrafo respecto al título */
+    max-width: 560px; 
 }
 
 
@@ -287,7 +287,7 @@ button {
 
     .galeria-tours {
         width: 100%;
-        grid-template-columns: repeat(2, 1fr); /* Mantiene 2x2 como en la captura */
+        /* grid-template-columns: repeat(2, 1fr); */
         gap: 8px;
     }
 
