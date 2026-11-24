@@ -287,7 +287,6 @@ button {
 
     .galeria-tours {
         width: 100%;
-        /* grid-template-columns: repeat(2, 1fr); */
         gap: 8px;
     }
 
