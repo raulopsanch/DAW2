@@ -4,12 +4,23 @@
     --viajeCampamento: #7c7c7c;
 }
 
+.linea {
+    width: 120px;
+    height: 4px;
+    background: var(--botones);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* cabecera */
 header {
     background-image: url("img/header-bg.png");
     width: 100%;
     height: 100vh;
     background-position: bottom;
     background-size: cover;
+    flex-direction: column;
+    display: flex;
 }
 
 nav {
@@ -28,6 +39,10 @@ a {
     
 }
 
+a:hover {
+    color: var(--botones);
+}
+
 button {
     padding: 8px 15px;
     background-color: var(--botones);
@@ -38,3 +53,245 @@ button {
 }
 
 /* contenido-header */
+#contenido-header {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.boton {
+    padding: 3px 100px;
+    background-color: var(--botones);
+    border: 0;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+/* eventos */
+.eventos {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.titulo-evento {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--titulos);
+    margin-bottom: 25px;
+}
+
+.fila-eventos {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.col-eventos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.col-evento img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover; /* Evita que las fotos se deformen si tienen distinto tamaño */
+    border-radius: 4px;
+}
+
+.col-evento p {
+    color: var(--viajeCampamento);
+    font-size: 0.95rem;
+    max-width: 420px;
+    margin-bottom: 20px;
+}
+
+/* explora el mundo */
+.explora {
+    background-image: url("img/bg2.png");
+    width: 100%;
+    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+}
+
+.contenido {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.texto-contenido {
+    max-width: 700px; /* Limita el ancho del bloque para que el párrafo parta en dos líneas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-contenido h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase; /* "EXPLORA EL MUNDO" en mayúsculas */
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.texto-contenido p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    max-width: 560px; /* Acota un poco más el párrafo respecto al título */
+}
+
+
+/* PRÓXIMO TOURS */
+.tours {
+    width: 85%;
+    margin: 90px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.info-tours {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info-tours h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.info-tours p {
+    color: var(--viajeCampamento);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 420px;
+    margin: 15px 0 25px;
+}
+
+/* galería fotos */
+.galeria-tours {
+    flex: 1.2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.galeria-tours img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    /* Cabecera y navegación */
+    header {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 15px;
+        margin: 0;
+        text-align: center;
+    }
+
+    #enlaces {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    a {
+        margin-right: 0;
+    }
+
+    #boton {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    #contenido-header {
+        padding: 50px 20px;
+    }
+
+    .texto-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .texto-header h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Próximos eventos: 1 columna */
+    .eventos {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .fila-eventos {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .col-eventos img {
+        height: 220px;
+    }
+
+    /* Sección Explora el mundo */
+    .explora {
+        height: auto;
+        min-height: 60vh;
+        padding: 60px 15px;
+    }
+
+    .texto-contenido h2 {
+        font-size: 1.7rem;
+    }
+
+    /* Próximos tour y destinos: texto arriba, fotos debajo */
+    .tours {
+        width: 90%;
+        margin: 50px auto;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .info-tours h2 {
+        font-size: 1.5rem;
+    }
+
+    .galeria-tours {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr); /* Mantiene 2x2 como en la captura */
+        gap: 8px;
+    }
+
+    .galeria-tours img {
+        height: 130px;
+    }
+}
