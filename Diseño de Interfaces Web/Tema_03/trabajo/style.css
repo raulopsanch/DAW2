@@ -230,7 +230,7 @@ button {
         margin-right: 0;
     }
 
-    #boton {
+    button {
         width: 90%;
         max-width: 300px;
     }
