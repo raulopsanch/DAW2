@@ -1,0 +1,29 @@
+:root {
+    --naranjaClaro: #fcc37d;
+    --naranja: darkorange;
+    --gris: #828181;
+    --CopyrightFoooter: lightgray;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+.imagen img {
+    width: 2%;
+    height: 2%;
+}
+
+.imagen span {
+    font-size: 250%;
+    color: var(--naranja);
+    font-weight: bold;
+}
+
+.contenido-padre {
+    height: 40vh;
+    background-image: url("images/light_bulb.jpg");
+    width: 2000px;
+    height: 420px;
+}
