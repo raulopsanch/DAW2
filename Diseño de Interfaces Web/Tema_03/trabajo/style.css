@@ -149,9 +149,9 @@ button {
     margin-bottom: 25px;
 }
 
-/* PRÓXIMO TOURS */
+/* PRÓXIMOs TOURS */
 .tours {
-    width: 60%;
+    width: 70%;
     margin: 50px auto;
     display: flex;
     align-items: center;
@@ -184,7 +184,6 @@ button {
 }
 
 .galeria-tours img {
-    object-fit: cover;
     display: block;
 }
 
