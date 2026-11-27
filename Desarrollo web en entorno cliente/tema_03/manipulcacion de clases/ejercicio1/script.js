@@ -12,12 +12,12 @@ function ejecutar() {
         rdo += `ID: ${id}\n`;
         rdo += `Precio: ${precio}\n`;
         rdo += `Stock: ${stock}\n`;
+        rdo += "\n";
 
         if (stock == 0) {
             producto.classList.add("sin-stock");
             producto.setAttribute("disponible", false);
-            const todosP = producto.querySelectorAll("p");
-            todosP[1].textContent = "AGOTADO";
+            producto.querySelector("p:last-of-type").textContent = "AGOTADO";
         } else {
             producto.setAttribute("disponible", true);
         }
