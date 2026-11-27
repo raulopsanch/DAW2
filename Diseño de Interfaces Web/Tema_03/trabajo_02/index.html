@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -7,14 +7,141 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <header>
+        <header class="cabecera">
             <div class="imagen">
                 <img src="images/Fuego.png" />
                 <span>Logo</span>
             </div>
-            <div class="contenido-padre">
-                <div class="contenido"></div>
-            </div>
+            <nav class="barra-nav">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Producto</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Mi cuenta</a></li>
+                    <li>
+                        <a href="#" class="carrito-link"><img src="images/carrito.png" alt="" /><span>Carrito</span></a>
+                    </li>
+                </ul>
+            </nav>
         </header>
+
+        <section class="contenido-padre">
+            <div class="contenido">
+                <div class="titulo-hero">
+                    <img src="images/ecualizador.png" class="ecualizador" />
+                    <h1>Compromiso de futuro</h1>
+                </div>
+                <p>La innovación fortalece los productos elaborados artesanalmente en vez de producir en masa.</p>
+                <button class="btn-participa">Participa ahora</button>
+            </div>
+        </section>
+
+        <section class="calidad-superior">
+            <div class="contenedor-seccion">
+                <h2>Calidad superior</h2>
+                <p class="descripcion-seccion">
+                    Experiencia basada en multimedia y estrategias de crecimiento multimedios previstas de forma
+                    proactiva. Visualice a la perfección el capital intelectual de calidad sin una colaboración superior
+                    y sin compartir ideas. Pontificar holísticamente los portales base instalados después de productos
+                    mantenibles sin garantía.
+                </p>
+
+                <div class="tarjetas">
+                    <article class="tarjeta-paso">
+                        <img src="images/mung_beans.jpg" alt="Siembra" />
+                        <span>Siembra</span>
+                    </article>
+
+                    <article class="tarjeta-paso">
+                        <img src="images/coffee_beans.jpg" alt="Esfuerzo" />
+                        <span>Esfuerzo</span>
+                    </article>
+
+                    <article class="tarjeta-paso">
+                        <img src="images/grapes.jpg" alt="Recoje" />
+                        <span>Recoje</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="productos-mundiales">
+            <div class="contenedor-seccion">
+                <h2>Productos mundiales</h2>
+                <div class="productos">
+                    <article class="tarjeta-producto">
+                        <img src="images/pepper.jpg" alt="" />
+                        <h3>Nicho Premiun</h3>
+                        <p class="ingredientes">
+                            Uva nori, remolacha plateada, brócoli, kombu, hojas de remolacha, habas, papa, quandong,
+                            apio. Bunya nueces guisante de ojos negros nabo de la pradera puerro lentejas nabos verdes
+                            chirivía.
+                        </p>
+                        <p class="precio">10.45</p>
+                        <div class="acciones-producto">
+                            <input type="number" value="1" aria-label="Cantidad" />
+                            <button type="button" class="btn-carrito">
+                                <img src="images/carritoBlanco.png" alt="" />
+                                <span>Añadir Carrito</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="images/jars.jpg" alt="" />
+                        <h3>Nicho Premiun</h3>
+                        <p class="ingredientes">
+                            Uva nori, remolacha plateada, brócoli, kombu, hojas de remolacha, habas, papa, quandong,
+                            apio. Bunya nueces guisante de ojos negros nabo de la pradera puerro lentejas nabos verdes
+                            chirivía.
+                        </p>
+                        <p class="precio">10.45</p>
+                        <div class="acciones-producto">
+                            <input type="number" value="1" aria-label="Cantidad" />
+                            <button type="button" class="btn-carrito">
+                                <img src="images/carritoBlanco.png" alt="" />
+                                <span>Añadir Carrito</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="images/pot.jpg" alt="" />
+                        <h3>Nicho Premiun</h3>
+                        <p class="ingredientes">
+                            Uva nori, remolacha plateada, brócoli, kombu, hojas de remolacha, habas, papa, quandong,
+                            apio. Bunya nueces guisante de ojos negros nabo de la pradera puerro lentejas nabos verdes
+                            chirivía.
+                        </p>
+                        <p class="precio">10.45</p>
+                        <div class="acciones-producto">
+                            <input type="number" value="1" aria-label="Cantidad" />
+                            <button type="button" class="btn-carrito">
+                                <img src="images/carritoBlanco.png" alt="" />
+                                <span>Añadir Carrito</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-producto">
+                        <img src="images/teapot.jpg" alt="" />
+                        <h3>Nicho Premiun</h3>
+                        <p class="ingredientes">
+                            Uva nori, remolacha plateada, brócoli, kombu, hojas de remolacha, habas, papa, quandong,
+                            apio. Bunya nueces guisante de ojos negros nabo de la pradera puerro lentejas nabos verdes
+                            chirivía.
+                        </p>
+                        <p class="precio">10.45</p>
+                        <div class="acciones-producto">
+                            <input type="number" value="1" aria-label="Cantidad" />
+                            <button type="button" class="btn-carrito">
+                                <img src="images/carritoBlanco.png" alt="" />
+                                <span>Añadir Carrito</span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

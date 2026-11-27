@@ -4,19 +4,41 @@
     --gris: #828181;
     --CopyrightFoooter: lightgray;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /* Cabecera */
-header {
+.cabecera {
     width: 100%;
-    height: 100vh;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.imagen {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .imagen img {
-    width: 2%;
-    height: 2%;
+    width: 20px;
+    height: auto;
+    display: block;
 }
 
 .imagen span {
-    font-size: 250%;
     color: var(--naranja);
     font-weight: bold;
 }
@@ -26,4 +48,234 @@ header {
     background-image: url("images/light_bulb.jpg");
 
     height: 60%;
+}
+
+/* Barra naranja de navegación */
+.barra-nav {
+    background-color: var(--naranja);
+    padding: 8px 24px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: -35px;
+    z-index: 10;
+}
+
+.barra-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.barra-nav li {
+    display: flex;
+    align-items: center;
+}
+
+.barra-nav a {
+    text-decoration: none;
+    color: #c7c7c7;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 1.05rem;
+    transition: color 0.25s ease;
+}
+
+.barra-nav a:hover {
+    color: #ffffff;
+}
+
+.carrilo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.barra-nav img {
+    width: 20px;
+    height: auot;
+    display: block;
+}
+
+/* hero */
+.contenido-padre {
+    width: 100%;
+    height: 70vh;
+    padding: 12px 30px;
+    background-image: url("images/light_bulb.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.contenido {
+    width: 80%;
+    margin: 0 auto;
+    color: #ffffff;
+    gap: 14px;
+}
+
+.titulo-hero {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.ecualizador {
+    width: 60px;
+    height: auto;
+    display: block;
+}
+
+.titulo-hero h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #ffffff;
+}
+
+.contenido p {
+    max-width: 620px;
+    margin: 14px, 0, 20px;
+}
+
+.btn-participa {
+    display: inline-block;
+    background-color: var(--naranja);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6pc;
+    font-weight: bold;
+}
+
+/* calidad superior */
+.contenedor-seccion {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 45px 0 12px;
+}
+
+.contenedor-seccion h2 {
+    color: var(--naranja);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Tarjetas */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.tarjeta-paso {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-paso img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.75);
+}
+
+.tarjeta-paso span {
+    position: absolute;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Productos mundiales */
+.productos-mundiales,
+.contenedor-seccion {
+    padding-top: 1px;
+}
+
+.productos-mundiales {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.tarjeta-producto {
+    border: 1 solid #e5e5e5;
+    padding: 14px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-producto h3 {
+    color: var(--naranja);
+    margin: 12px 0 8px;
+}
+
+.ingredientes {
+    color: var(--gris);
+    font-size: 0.85rem;
+    margin: 0 0 14px;
+}
+
+.precio {
+    color: var(--naranja);
+    font-weight: bold;
+    margin: 0 0 18px;
+}
+
+.acciones-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.acciones-producto input[type="number"] {
+    width: 55px;
+    padding: 4px 6px;
+    text-align: center;
+}
+
+.btn-carrito {
+    width: 100%;
+    background-color: var(--naranja);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-carrito img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
